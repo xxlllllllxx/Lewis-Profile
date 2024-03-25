@@ -1,5 +1,6 @@
 **Lewis-Profile**
-## Profile [Visit Web Profile](https://xxlllllllxx.github.io/Lewis-Profile/)
+## Profile 
+[![GitHub](https://img.shields.io/badge/GitHub_Profile-100000?style=for-the-badge&logo=github&logoColor=white)](https://xxlllllllxx.github.io/Lewis-Profile/)
 ### Name: Masallo, Lewis Daveriel  
 ### Course: Bachelor of Science in Information Technology (Major in Web and Application)
 
@@ -25,7 +26,7 @@
 ## Projects  
 ### Java  
 - **Mobile Application: Affordawash App (3rd Year)**  
-  [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xxlllllllxx/Affordawash_App)
+  [![Github](https://img.shields.io/badge/GitHub_Affordawash_Application-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xxlllllllxx/Affordawash_App)
   - Role:
     - Main Programmer 
   - Description: Affordawash App is a mobile application developed during the third year of my studies. It is designed to help businesses keep track of sales and manage their operations effectively.
@@ -40,7 +41,7 @@
 
 ### PHP (CodeIgniter) & MySQL  
 - **Web Application: Affordawash Web (3rd Year)**  
-  [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xxlllllllxx/Affordawash_Web)
+  [![Github](https://img.shields.io/badge/GitHub_Affordawash_website-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xxlllllllxx/Affordawash_Web)
   - Role:
     - Main Programmer 
   - Description: Affordawash Web is a web-based application developed during the third year of my studies. It complements the mobile app by providing a web interface for managing sales, inventory, and customer information.
@@ -55,7 +56,7 @@
       
 ### PHP (Vanilla) & MySQL  
 - **Web Application: Luminaire Lane (4th Year)**  
-  [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xxlllllllxx/WST2_Project)
+  [![Github](https://img.shields.io/badge/GitHub_Luminaire_lane-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xxlllllllxx/WST2_Project)
   - Role:
     - Main Programmer 
   - Description: Luminaire Lane is a web-based marketplace developed during the third year of my studies. It provides a platform for sellers to list and manage their products and for buyers to browse and purchase items.
@@ -73,7 +74,7 @@
 
 ### WPF (Windows Presentation Foundation)
 - **Desktop Application: SPTC-App (4th Year Capstone Project)**  
-  [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BsuscBsit/SPTC-APP)
+  [![Github](https://img.shields.io/badge/GitHub_SPTC_app-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BsuscBsit/SPTC-APP)
   - Role:
     - Main Programmer 
   - Description: SPTC-App is a capstone project developed as a Windows Presentation Foundation (WPF) application for managing a transportation cooperative. It includes features for member management, franchise information tracking, operator and driver ID generation, violation and suspension monitoring, as well as generating reports and analytics for decision-making.
@@ -94,7 +95,7 @@
       
 ### Arduino-Scale
 - **Embedded System: Arduino-AutoScale**  
-  [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xxlllllllxx/Arduino-AutoScale)
+  [![Github](https://img.shields.io/badge/GitHub_AutoScale-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xxlllllllxx/Arduino-AutoScale)
   - Role:
     - Main Programmer 
   - Description: Arduino-AutoScale is an embedded system project that utilizes Arduino, a Load Cell Sensor, and Python with custom Tkinter GUI and matplotlib for data visualization. The project aims to build a digital scale system capable of accurately measuring weights and displaying them through a user-friendly interface.
@@ -111,7 +112,7 @@
 
 ### Arduino-Trash
 - **Embedded System: Arduino-AutoTrash**  
-  [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xxlllllllxx/Arduino-AutoTrash)
+  [![Github](https://img.shields.io/badge/GitHub_AutoTrash-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xxlllllllxx/Arduino-AutoTrash)
   - Role:
     - Main Programmer 
   - Description: Arduino-AutoTrash is an embedded system project aimed at building a smart trash bin. It utilizes Arduino along with infrared sensor, ultrasonic sensor, moisture sensor, and inductive sensor to detect various parameters related to waste management.
@@ -129,6 +130,7 @@
 
 ### WorkSched
 - **Flutter Application: Private**
+  - [![Worksched](https://img.shields.io/badge/Flutter_Worksched-1877F2?style=for-the-badge&logo=flutter&logoColor=white)](https://ess.optimum-source.com/#/login)
   - Role:
     - UI Programmer
   - Description: WorkSched is a project developed during my internship period. It is a private repository designed to help manage work schedules efficiently.
