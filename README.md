@@ -1,6 +1,7 @@
-# Lewis-Profile
-## Profile
-Name: Masallo, Lewis Daveriel
+**Lewis-Profile**
+## Profile  
+Name: Masallo, Lewis Daveriel  
+BSIT
 
 ## Projects  
 ### Java  
