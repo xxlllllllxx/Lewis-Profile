@@ -117,7 +117,7 @@
     - **Custom Tkinter GUI**: Implements a custom graphical user interface (GUI) using Python's Tkinter library for user interaction and display.
     - **Data Visualization**: Integrates matplotlib library to visualize weight data in real-time graphs for better analysis.
   - Technologies Used:
-    - Arduino
+    - [Arduino](https://img.shields.io/badge/Arduino_IDE-00979D?style=for-the-badge&logo=arduino&logoColor=white)
     - Load Cell Sensor
     - Python
     - Tkinter (custom GUI)
@@ -136,7 +136,7 @@
     - **Moisture Sensor**: Determines the moisture content of the waste.
     - **Inductive Sensor**: Identifies metallic objects in the trash.
   - Technologies Used:
-    - Arduino
+    - [Arduino](https://img.shields.io/badge/Arduino_IDE-00979D?style=for-the-badge&logo=arduino&logoColor=white)
     - Infrared Sensor
     - Ultrasonic Sensor
     - Moisture Sensor
@@ -149,11 +149,13 @@
   - Role:
     - Main Programmer
   - Description: Some random python projects with different APIs and Libraries
+  - Technologies Used:
+    - https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
 
 ### WorkSched
 
 - **Flutter Application: Private**
-  - [![Worksched](https://img.shields.io/badge/Flutter_Worksched-1877F2?style=for-the-badge&logo=flutter&logoColor=white)](https://ess.optimum-source.com/#/login)
+  [![Worksched](https://img.shields.io/badge/Flutter_Worksched-1877F2?style=for-the-badge&logo=flutter&logoColor=white)](https://ess.optimum-source.com/#/login)
   - Role:
     - UI Programmer
   - Description: WorkSched is a project developed during my internship period. It is a private repository designed to help manage work schedules efficiently.
