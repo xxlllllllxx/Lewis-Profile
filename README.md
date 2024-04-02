@@ -167,3 +167,4 @@
     - SourceTree
 
 ![Stats](https://github-readme-stats.vercel.app/api?username=xxlllllllxx&theme=blue-green)
+![top lang](https://github-readme-stats.vercel.app/api/top-langs/?username=xxlllllllxx&theme=blue-green)
