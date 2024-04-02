@@ -1,3 +1,11 @@
 {
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "prettier.arrowParens": "avoid",
+  "prettier.bracketSpacing": false,
+  "css.format.enable": true,
+  "less.format.enable": false,
+  "scss.format.enable": false,
 }

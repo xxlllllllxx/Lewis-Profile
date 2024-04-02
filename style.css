@@ -1,8 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #202020;
+    color: #fff;
 }
 
 div.content {
@@ -12,7 +13,7 @@ div.content {
 }
 
 header {
-    background-color: #333;
+    background-color: #101010;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -22,16 +23,17 @@ section {
     padding: 20px;
 }
 
-h2 {
-    color: #333;
-}
-
 .project {
     margin-bottom: 20px;
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px 40px 40px;
+    background-color: #333;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+b {
+    font-weight: 900;
+    font-size: 16px;
 }
 
 .project a {
@@ -45,6 +47,7 @@ h2 {
 
 .project-description {
     margin-top: 10px;
+    margin-left: 10px;
 }
 
 .technologies {
@@ -64,4 +67,9 @@ h2 {
 
 .socials a:hover {
     text-decoration: underline;
+}
+
+img {
+    border: 1px solid #101010;
+    border-radius: 8px;
 }
