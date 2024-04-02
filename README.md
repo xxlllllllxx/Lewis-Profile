@@ -172,7 +172,7 @@
 
 ### WorkSched
 
-- **Flutter Application: Private**
+- **Flutter Application: Private**  
   [![Worksched](https://img.shields.io/badge/Flutter_Worksched-02569B?style=for-the-badge&logo=flutter)](https://ess.optimum-source.com/#/login)
   - Role:
     - UI Programmer
