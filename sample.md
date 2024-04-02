@@ -179,3 +179,5 @@ solid cube_corner
   endfacet
 endsolid
 ```
+
+![Chart](https://quickchart.io/chart?c={type:%27bar%27,data:{labels:[%27Q1%27,%27Q2%27,%27Q3%27,%27Q4%27],%20datasets:[{label:%27Users%27,data:[50,60,70,180]},{label:%27Revenue%27,data:[100,200,300,400]}]}})
