@@ -118,10 +118,10 @@
     - **Data Visualization**: Integrates matplotlib library to visualize weight data in real-time graphs for better analysis.
   - Technologies Used:
     - ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
-    - Load Cell Sensor
-    - ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-    - Tkinter (custom GUI)
-    - Matplotlib
+    - ![Load Cell](https://img.shields.io/badge/load_cell_sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=black)
+    - ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54)
+    - ![Tkinter](https://img.shields.io/badge/tkinter-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54)
+    - ![Matloptlib](https://img.shields.io/badge/matplotlib-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 ### Arduino-Trash
 
@@ -137,10 +137,11 @@
     - **Inductive Sensor**: Identifies metallic objects in the trash.
   - Technologies Used:
     - ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
-    - Infrared Sensor
-    - Ultrasonic Sensor
-    - Moisture Sensor
-    - Inductive Sensor
+    - ![Infrared](https://img.shields.io/badge/infrared_sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=red)
+    - ![Ultrasonic](https://img.shields.io/badge/ultrasonic_sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=white)
+    - ![moisture](https://img.shields.io/badge/moisture_sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=green)
+    - ![Inductive](https://img.shields.io/badge/inductive_sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=blue)
+  - Timeline:
 
 ### Python Projects
 
@@ -150,7 +151,7 @@
     - Main Programmer
   - Description: Some random python projects with different APIs and Libraries
   - Technologies Used:
-    - ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+    - ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 ### WorkSched
 
@@ -166,5 +167,56 @@
     - MySql
     - SourceTree
 
-![Stats](https://github-readme-stats.vercel.app/api?username=xxlllllllxx&theme=blue-green)
+![Stats](https://github-readme-stats.vercel.app/api?username=xxlllllllxx&theme=blue-green)  
 ![top lang](https://github-readme-stats.vercel.app/api/top-langs/?username=xxlllllllxx&theme=blue-green)
+![Graph](https://github-readme-activity-graph.vercel.app/graph?username=xxlllllllxx&theme=dracula)
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+```geojson
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "ID": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90,
+              35
+            ],
+            [
+              -90,
+              30
+            ],
+            [
+              -85,
+              30
+            ],
+            [
+              -85,
+              35
+            ],
+            [
+              -90,
+              35
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
+```
