@@ -144,8 +144,11 @@
 
 ### Python Projects
 
-- **Random Mini Python Projects**
-  [![Github](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://github.com/xxlllllllxx/Arduino-AutoTrash)
+- **Random Mini Python Projects**  
+  [![Github](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://github.com/xxlllllllxx/Python-Files)
+  - Role:
+    - Main Programmer
+  - Description: Some random python projects with different APIs and Libraries
 
 ### WorkSched
 
