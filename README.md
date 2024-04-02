@@ -2,7 +2,7 @@
 
 ## Profile
 
-[![GitHub](https://img.shields.io/badge/GitHub_Profile-100000?style=for-the-badge&logo=github&logoColor=white)](https://xxlllllllxx.github.io/Lewis-Profile/)
+[![GitHub](https://img.shields.io/badge/GitHub_Profile_xxlllllllxx-100000?style=for-the-badge&logo=github&logoColor=white)](https://xxlllllllxx.github.io/Lewis-Profile/)
 
 ### Name: Masallo, Lewis Daveriel
 
@@ -30,7 +30,19 @@
 
 [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/lewismasallo) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xxlllllllxx) [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lewismasallo@gmail.com) [![Messenger](https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white)](https://m.me/lewismasallo) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lewis-daveriel-masallo-0881521ba/)
 
+## Github accounts:
+
+[![GitHub](https://img.shields.io/badge/bsuscbsit-100000?style=for-the-badge&logo=github&logoColor=white)](https://xxlllllllxx.github.io/Lewis-Profile/)  
+[![GitHub](https://img.shields.io/badge/xxlllllllxx-100000?style=for-the-badge&logo=github&logoColor=white)](https://xxlllllllxx.github.io/Lewis-Profile/)  
+[![GitHub](https://img.shields.io/badge/lewisdaverielmasallo-100000?style=for-the-badge&logo=github&logoColor=white)](https://xxlllllllxx.github.io/Lewis-Profile/)
+
 ## Projects
+
+![Stats](https://github-readme-stats.vercel.app/api?username=xxlllllllxx&theme=blue-green)  
+![top lang](https://github-readme-stats.vercel.app/api/top-langs/?username=xxlllllllxx&theme=blue-green)
+![top lang](https://github-readme-stats.vercel.app/api/top-langs/?username=lewisdaverielmasallo&theme=blue-green)  
+![top lang](https://github-readme-stats.vercel.app/api/top-langs/?username=BsuscBsit&theme=blue-green)  
+![Graph](https://github-readme-activity-graph.vercel.app/graph?username=xxlllllllxx&theme=github-compact)
 
 ### Java
 
@@ -44,9 +56,9 @@
     - **Inventory Management**: Enables users to manage inventory levels and track stock movements.
     - **Customer Management**: Provides features for managing customer information and interactions.
   - Technologies Used:
-    - Java
-    - Android SDK
-    - SQLite Database
+    - ![Java](https://img.shields.io/badge/java-5382a1?&style=for-the-badge&logo=coffeescript&logoColor=f89820)
+    - ![Android](https://img.shields.io/badge/Android_Studio-blue?style=for-the-badge&logo=android)
+    - ![SQLite Database](https://img.shields.io/badge/SQLite_database-00000F?style=for-the-badge&logo=sqlite&logoColor=003B57)
 
 ### PHP (CodeIgniter) & MySQL
 
@@ -60,9 +72,11 @@
     - **Inventory Management**: Enables users to manage inventory levels and track stock movements.
     - **Customer Management**: Provides features for managing customer information and interactions.
   - Technologies Used:
-    - PHP (CodeIgniter)
-    - MySQL Database
-    - HTML, CSS, JavaScript
+    - ![PHP CodeIgniter](https://img.shields.io/badge/codeigniter-777BB4?style=for-the-badge&logo=codeigniter)
+    - ![MySQL Database](https://img.shields.io/badge/MySQL_database-00000F?style=for-the-badge&logo=mysql)
+    - ![HTML](https://img.shields.io/badge/HTML-103030?style=for-the-badge&logo=html5)
+    - ![CSS](https://img.shields.io/badge/CSS-103030?&style=for-the-badge&logo=css3)
+    - ![JavaScript](https://img.shields.io/badge/javascript-103030?&style=for-the-badge&logo=javascript)
 
 ### PHP (Vanilla) & MySQL
 
@@ -77,10 +91,12 @@
     - **Shopping Cart**: The shopping cart feature allows users to add items to their cart and view the total cost of their order. To access the shopping cart, click on the "Cart" button on the top right corner of the homepage.
     - **PayPal Payment Method**: Luminaire Lane uses PayPal as the payment method for all orders. To complete your order, simply follow the instructions provided by PayPal during the checkout process.
   - Technologies Used:
-    - Vanilla PHP
-    - MySQL Database
-    - HTML, CSS, JavaScript
-    - PayPal API integration
+    - ![PHP](https://img.shields.io/badge/PHP-103030?style=for-the-badge&logo=php)
+    - ![MySQL Database](https://img.shields.io/badge/MySQL_database-00000F?style=for-the-badge&logo=mysql)
+    - ![HTML](https://img.shields.io/badge/HTML-103030?style=for-the-badge&logo=html5)
+    - ![CSS](https://img.shields.io/badge/CSS-103030?&style=for-the-badge&logo=css3)
+    - ![JavaScript](https://img.shields.io/badge/javascript-103030?&style=for-the-badge&logo=javascript)
+    - ![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal)
   - Hosting: Down
 
 ### WPF (Windows Presentation Foundation)
@@ -98,12 +114,13 @@
     - **Reports and Analytics**: Generate insightful reports for decision-making.
     - **Multiple Users and Access**: Provide access control mechanisms to allow multiple users with different roles to access the application securely.
   - Technologies Used:
-    - ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-    - ![WPF (Windows Presentation Foundation](https://img.shields.io/badge/windows_presentation_foundation-0078D6?style=for-the-badge&logo=windows&logoColor=whit)
-    - ![MySQL Database](https://img.shields.io/badge/MySQL_database-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+    - ![C#](https://img.shields.io/badge/C_sharp-239120?style=for-the-badge&logo=c%23)
+    - ![.Net](https://img.shields.io/badge/dotnet-512BD4?style=for-the-badge&logo=.net)
+    - ![WPF (Windows Presentation Foundation](https://img.shields.io/badge/windows_presentation_foundation-0078D6?style=for-the-badge&logo=windows)
+    - ![MySQL Database](https://img.shields.io/badge/MySQL_database-00000F?style=for-the-badge&logo=mysql)
   - Hardware Itegration:
-    - Digital Camera
-    - Signature Pad
+    - ![Camera](https://img.shields.io/badge/digital_camera-103030?style=for-the-badge&logo=cloudcannon)
+    - ![Sign pad](https://img.shields.io/badge/Signature_pad-103030?style=for-the-badge&logo=powerpages)
 
 ### Arduino-Scale
 
@@ -146,7 +163,7 @@
 ### Python Projects
 
 - **Random Mini Python Projects**  
-  [![Github](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://github.com/xxlllllllxx/Python-Files)
+  [![Github](https://img.shields.io/badge/GitHub_Python_files-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xxlllllllxx/Python-Files)
   - Role:
     - Main Programmer
   - Description: Some random python projects with different APIs and Libraries
@@ -156,20 +173,16 @@
 ### WorkSched
 
 - **Flutter Application: Private**
-  [![Worksched](https://img.shields.io/badge/Flutter_Worksched-1877F2?style=for-the-badge&logo=flutter&logoColor=white)](https://ess.optimum-source.com/#/login)
+  [![Worksched](https://img.shields.io/badge/Flutter_Worksched-02569B?style=for-the-badge&logo=flutter)](https://ess.optimum-source.com/#/login)
   - Role:
     - UI Programmer
   - Description: WorkSched is a project developed during my internship period. It is a private repository designed to help manage work schedules efficiently.
   - Technologies Used:
-    - Flutter
-    - Material UI
-    - NodeJS
-    - MySql
-    - SourceTree
-
-![Stats](https://github-readme-stats.vercel.app/api?username=xxlllllllxx&theme=blue-green)  
-![top lang](https://github-readme-stats.vercel.app/api/top-langs/?username=xxlllllllxx&theme=blue-green)
-![Graph](https://github-readme-activity-graph.vercel.app/graph?username=xxlllllllxx&theme=dracula)
+    - ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter)
+    - ![Material 3](https://img.shields.io/badge/material_3-indigo?style=for-the-badge&logo=materialdesign)
+    - ![Nodejs](https://img.shields.io/badge/Node_js-202020?style=for-the-badge&logo=node.js)
+    - ![MySQL Database](https://img.shields.io/badge/MySQL_database-00000F?style=for-the-badge&logo=mysql)
+    - ![Sourcetree](https://img.shields.io/badge/Sourcetree-0052CC?style=for-the-badge&logo=sourcetree)
 
 ```mermaid
 graph TD;
@@ -219,4 +232,136 @@ graph TD;
     }
   ]
 }
+```
+
+```topojson
+{
+  "type": "Topology",
+  "transform": {
+    "scale": [
+      0.0005000500050005,
+      0.00010001000100010001
+    ],
+    "translate": [
+      100,
+      0
+    ]
+  },
+  "objects": {
+    "example": {
+      "type": "GeometryCollection",
+      "geometries": [
+        {
+          "type": "Point",
+          "properties": {
+            "prop0": "value0"
+          },
+          "coordinates": [
+            4000,
+            5000
+          ]
+        },
+        {
+          "type": "LineString",
+          "properties": {
+            "prop0": "value0",
+            "prop1": 0
+          },
+          "arcs": [
+            0
+          ]
+        },
+        {
+          "type": "Polygon",
+          "properties": {
+            "prop0": "value0",
+            "prop1": {
+              "this": "that"
+            }
+          },
+          "arcs": [
+            [
+              1
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "arcs": [
+    [
+      [
+        4000,
+        0
+      ],
+      [
+        1999,
+        9999
+      ],
+      [
+        2000,
+        -9999
+      ],
+      [
+        2000,
+        9999
+      ]
+    ],
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        9999
+      ],
+      [
+        2000,
+        0
+      ],
+      [
+        0,
+        -9999
+      ],
+      [
+        -2000,
+        0
+      ]
+    ]
+  ]
+}
+```
+
+```stl
+solid cube_corner
+  facet normal 0.0 -1.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 1.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+  facet normal 0.0 0.0 -1.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 1.0 0.0 0.0
+    endloop
+  endfacet
+  facet normal -1.0 0.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+      vertex 0.0 1.0 0.0
+    endloop
+  endfacet
+  facet normal 0.577 0.577 0.577
+    outer loop
+      vertex 1.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+endsolid
 ```
