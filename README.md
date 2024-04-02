@@ -98,9 +98,9 @@
     - **Reports and Analytics**: Generate insightful reports for decision-making.
     - **Multiple Users and Access**: Provide access control mechanisms to allow multiple users with different roles to access the application securely.
   - Technologies Used:
-    - C#
-    - WPF (Windows Presentation Foundation)
-    - MySQL Database
+    - ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+    - ![WPF (Windows Presentation Foundation](https://img.shields.io/badge/windows_presentation_foundation-0078D6?style=for-the-badge&logo=windows&logoColor=whit)
+    - ![MySQL Database](https://img.shields.io/badge/MySQL_database-00000F?style=for-the-badge&logo=mysql&logoColor=white)
   - Hardware Itegration:
     - Digital Camera
     - Signature Pad
@@ -117,9 +117,9 @@
     - **Custom Tkinter GUI**: Implements a custom graphical user interface (GUI) using Python's Tkinter library for user interaction and display.
     - **Data Visualization**: Integrates matplotlib library to visualize weight data in real-time graphs for better analysis.
   - Technologies Used:
-    - ![Arduino](https://img.shields.io/badge/Arduino_IDE-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+    - ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
     - Load Cell Sensor
-    - Python
+    - ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
     - Tkinter (custom GUI)
     - Matplotlib
 
@@ -136,7 +136,7 @@
     - **Moisture Sensor**: Determines the moisture content of the waste.
     - **Inductive Sensor**: Identifies metallic objects in the trash.
   - Technologies Used:
-    - ![Arduino](https://img.shields.io/badge/Arduino_IDE-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+    - ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
     - Infrared Sensor
     - Ultrasonic Sensor
     - Moisture Sensor
@@ -150,7 +150,7 @@
     - Main Programmer
   - Description: Some random python projects with different APIs and Libraries
   - Technologies Used:
-    - [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+    - ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 ### WorkSched
 
@@ -165,3 +165,5 @@
     - NodeJS
     - MySql
     - SourceTree
+
+![Stats](https://github-readme-stats.vercel.app/api?username=xxlllllllxx&theme=blue-green)
