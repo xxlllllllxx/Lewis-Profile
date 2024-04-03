@@ -2,7 +2,8 @@ body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    background-color: #202020;
+    background-image: url("src/image/vecteezy_banner-poster-flyer-design-with-watercolor-pattern-on-dark_.jpg");
+    background-size: 100%;
     color: #fff;
 }
 
@@ -64,7 +65,7 @@ section {
     padding: 20px 40px 40px 40px;
     background-color: #333;
     border-radius: 12px;
-    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px 2px 2px rgba(128, 128, 128, 0.5);
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 1), inset -2px 2px 2px rgba(128, 128, 128, 0.5);
     transition: transform 0.2s ease;
 }
 
