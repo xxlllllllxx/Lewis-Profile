@@ -10,14 +10,51 @@ div.content {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
 }
 
 header {
     background-color: #101010;
-    color: #fff;
     padding: 20px;
-    text-align: center;
+    /* position: sticky;
+    top: -20px; */
 }
+
+.header-nav {
+    color: #fff;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-nav a:hover {
+    text-decoration: none;
+    color: green;
+}
+
+.click:hover {
+    color: blue;
+}
+
+img {
+    transition: transform 0.2s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+
+}
+
 
 section {
     padding: 20px;
@@ -28,12 +65,23 @@ section {
     padding: 20px 40px 40px 40px;
     background-color: #333;
     border-radius: 12px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.8), inset -2px 2px 2px rgba(128, 128, 128, 0.5);
+    transition: transform 0.2s ease;
 }
+
+.project:hover {
+    transform: scale(1.01);
+}
+
+
 
 b {
     font-weight: 900;
-    font-size: 16px;
+    font-size: 18px;
+}
+
+.tab {
+    margin-left: 40px;
 }
 
 .project a {
@@ -50,17 +98,42 @@ b {
     margin-left: 10px;
 }
 
+/* Custom bullet points for list items */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+ul li::before {
+    content: "◘";
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.tab ul li::before {
+    content: "‣";
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
 .technologies {
     margin-top: 10px;
 }
 
 .socials {
     margin-top: 20px;
-    text-align: center;
+    margin-left: 40px;
 }
 
 .socials a {
-    margin: 0 10px;
+    margin: 0 2px;
     color: #007bff;
     text-decoration: none;
 }

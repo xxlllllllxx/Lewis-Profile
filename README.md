@@ -17,12 +17,13 @@
 - C#
 - C
 - Dart
+- Yacc
 
 ### Platforms:
 
 - Web Technologies
 - Mobile Applications
-- Game Development (Game Maker Engine)
+- Game Development (Game Maker Studio)
 - Windows Application
 - Flutter Application
 
@@ -169,6 +170,28 @@
   - Description: Some random python projects with different APIs and Libraries
   - Technologies Used:
     - ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54)
+
+### Game Maker Studio
+
+- **Mobile and Windows Projects**  
+  [![Github](https://img.shields.io/badge/games-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xxlllllllxx/MobiGameActivity)
+  - Role:
+    - Main Programmer
+  - Description: This repository has 2 games namely Space Rocks and Car game.
+    - Space Rocks: 
+      - This is a tutorial assets designed to help users navigate the game maker studio
+      - customized
+      - added game levels adn level selection
+      - added powerups
+      
+    - Car Game: 
+      - A game of navigation where a tank should park in a designated parking lot
+      - got assets online
+      - own game mechanics
+      - with levels and level selection
+  - Technologies Used:
+    - ![Gamemaker](https://img.shields.io/badge/Game_Maker_studio-000000?style=for-the-badge&logo=gamemaker)
+
 
 ### WorkSched
 
