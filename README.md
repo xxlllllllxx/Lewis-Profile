@@ -33,17 +33,21 @@
 
 ## Github accounts:
 
-[![GitHub](https://img.shields.io/badge/bsuscbsit-100000?style=for-the-badge&logo=github&logoColor=white)](https://xxlllllllxx.github.io/Lewis-Profile/)  
-[![GitHub](https://img.shields.io/badge/xxlllllllxx-100000?style=for-the-badge&logo=github&logoColor=white)](https://xxlllllllxx.github.io/Lewis-Profile/)  
-[![GitHub](https://img.shields.io/badge/lewisdaverielmasallo-100000?style=for-the-badge&logo=github&logoColor=white)](https://xxlllllllxx.github.io/Lewis-Profile/)
+[![GitHub](https://img.shields.io/badge/bsuscbsit-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bsuscbsit)  
+[![GitHub](https://img.shields.io/badge/xxlllllllxx-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xxlllllllxx)  
+[![GitHub](https://img.shields.io/badge/lewisdaverielmasallo-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lewisdaverielmasallo)
 
 ## Projects
 
-![Stats](https://github-readme-stats.vercel.app/api?username=xxlllllllxx&theme=blue-green)  
-![top lang](https://github-readme-stats.vercel.app/api/top-langs/?username=xxlllllllxx&theme=blue-green)
-![top lang](https://github-readme-stats.vercel.app/api/top-langs/?username=lewisdaverielmasallo&theme=blue-green)  
-![top lang](https://github-readme-stats.vercel.app/api/top-langs/?username=BsuscBsit&theme=blue-green)  
+![Stats](https://github-readme-stats.vercel.app/api?username=bsuscbsit&theme=blue-green&show_icons=true&bg_color=202020)
+![Stats](https://github-readme-stats.vercel.app/api?username=xxlllllllxx&theme=blue-green&show_icons=true&bg_color=202020)
+![Stats](https://github-readme-stats.vercel.app/api?username=lewisdaverielmasallo&theme=blue-green&show_icons=true&bg_color=202020)  
+![top lang](https://github-readme-stats.vercel.app/api/top-langs/?username=xxlllllllxx&theme=blue-green&bg_color=202020)
+![top lang](https://github-readme-stats.vercel.app/api/top-langs/?username=lewisdaverielmasallo&theme=blue-green&bg_color=202020)  
+![top lang](https://github-readme-stats.vercel.app/api/top-langs/?username=BsuscBsit&theme=blue-green&bg_color=202020)  
+![Graph](https://github-readme-activity-graph.vercel.app/graph?username=bsuscbsit&theme=github-compact)
 ![Graph](https://github-readme-activity-graph.vercel.app/graph?username=xxlllllllxx&theme=github-compact)
+![Graph](https://github-readme-activity-graph.vercel.app/graph?username=lewisdaverielmasallo&theme=github-compact)
 
 ### Java
 
@@ -60,6 +64,7 @@
     - ![Java](https://img.shields.io/badge/java-5382a1?&style=for-the-badge&logo=coffeescript&logoColor=f89820)
     - ![Android](https://img.shields.io/badge/Android_Studio-blue?style=for-the-badge&logo=android)
     - ![SQLite Database](https://img.shields.io/badge/SQLite_database-00000F?style=for-the-badge&logo=sqlite&logoColor=003B57)
+  
 
 ### PHP (CodeIgniter) & MySQL
 
@@ -183,7 +188,7 @@
       - customized
       - added game levels adn level selection
       - added powerups
-      
+
     - Car Game: 
       - A game of navigation where a tank should park in a designated parking lot
       - got assets online

@@ -10,12 +10,12 @@ div.content {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
+    padding: 0px 10px;
 }
 
 header {
     background-color: #101010;
-    padding: 20px;
+    padding: 5px;
     /* position: sticky;
     top: -20px; */
 }
@@ -28,13 +28,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
 }
 
 .header-nav a {
     text-decoration: none;
     color: #fff;
+    margin-left: 20px;
 }
 
 .header-nav a:hover {
@@ -51,7 +50,7 @@ img {
 }
 
 img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 
 }
 
@@ -73,7 +72,20 @@ section {
     transform: scale(1.01);
 }
 
+.project-bottom-nav {
+    display: flex;
+    justify-content: end;
+}
 
+.project-bottom-nav span {
+    margin-left: 20px;
+}
+
+.project-bottom-nav span:hover {
+    margin-left: 20px;
+    color: #007bff;
+    cursor: pointer;
+}
 
 b {
     font-weight: 900;
