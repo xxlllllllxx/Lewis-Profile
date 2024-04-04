@@ -206,6 +206,8 @@
   - Role:
     - UI Programmer
   - Description: WorkSched is a project developed during my internship period. It is a private repository designed to help manage work schedules efficiently.
+  - Sample: 
+    - [![Dashboard](https://img.shields.io/badge/Worksched_Dashboard-02569B?style=for-the-badge&logo=flutter)](https://github.com/lewisdaverielmasallo/worksched_dashboard)
   - Technologies Used:
     - ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter)
     - ![Material 3](https://img.shields.io/badge/material_3-indigo?style=for-the-badge&logo=materialdesign)
