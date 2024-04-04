@@ -273,11 +273,32 @@ function loadProfile(profileData) {
 
 function createStatsElement(statsData) {
     const projectContainer = document.createElement('div');
+    projectContainer.style.height = "400px";
     projectContainer.classList.add('stats');
+
+    const cardholder = document.createElement('div');
+    cardholder.classList.add('info-card');
+    projectContainer.appendChild(cardholder);
+
+    const card = document.createElement(`div`);
+    const title = document.createElement(`h3`);
+    title.textContent = statsData.title;
+    card.appendChild(title);
+    const name = document.createElement(`h5`);
+    name.textContent = "Name: " + statsData.name;
+    card.appendChild(name);
+    const start = document.createElement(`h5`);
+    start.textContent = "Start Date: " + statsData.start;
+    card.appendChild(start);
+    const toprepo = document.createElement(`h5`);
+    toprepo.textContent = "Top Repository: " + statsData.toprepo;
+    card.appendChild(toprepo);
+    cardholder.appendChild(card);
 
     const stat = document.createElement('img');
     stat.src = statsData.stats;
-    projectContainer.appendChild(stat);
+    stat.style.width = '100%';
+    cardholder.appendChild(stat);
 
     const toplang = document.createElement('img');
     toplang.src = statsData.toplang;
