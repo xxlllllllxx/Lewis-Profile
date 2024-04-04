@@ -5,6 +5,7 @@ body {
     background-image: url("src/image/vecteezy_banner-poster-flyer-design-with-watercolor-pattern-on-dark_.jpg");
     background-size: 100%;
     color: #fff;
+    user-select: none;
 }
 
 div.content {
@@ -44,6 +45,11 @@ header {
 
 .click:hover {
     color: blue;
+    cursor: grab;
+}
+
+.mousedown {
+    cursor: grabbing !important;
 }
 
 img {
