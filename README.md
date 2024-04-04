@@ -29,7 +29,7 @@
 
 ### Socials:
 
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/lewismasallo) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xxlllllllxx) [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lewismasallo@gmail.com) [![Messenger](https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white)](https://m.me/lewismasallo) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lewis-daveriel-masallo-0881521ba/)
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/lewismasallo) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xxlllllllxx) [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lewismasallo@gmail.com) [![Messenger](https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white)](https://m.me/lewismasallo) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lewis-daveriel-masallo-0881521ba/) [![Gitlab](https://img.shields.io/badge/gitlab-202030?style=for-the-badge&logo=gitlab)](https://gitlab.com/lewisdaverielmasallo)
 
 ##  accounts:
 
@@ -38,7 +38,7 @@
 [![GitHub](https://img.shields.io/badge/lewisdaverielmasallo-100000?style=for-the-badge&logo=github)](https://github.com/lewisdaverielmasallo)  
 [![Gitlab](https://img.shields.io/badge/lewisdaverielmasallo-100000?style=for-the-badge&logo=gitlab)](https://gitlab.com/lewisdaverielmasallo)  
 
-## Projects
+## Statistics
 
 ![Stats](https://github-readme-stats.vercel.app/api?username=bsuscbsit&theme=blue-green&show_icons=true&bg_color=202020)
 ![Stats](https://github-readme-stats.vercel.app/api?username=xxlllllllxx&theme=blue-green&show_icons=true&bg_color=202020)
@@ -49,6 +49,8 @@
 ![Graph](https://github-readme-activity-graph.vercel.app/graph?username=bsuscbsit&theme=github-compact)
 ![Graph](https://github-readme-activity-graph.vercel.app/graph?username=xxlllllllxx&theme=github-compact)
 ![Graph](https://github-readme-activity-graph.vercel.app/graph?username=lewisdaverielmasallo&theme=github-compact)
+
+## Projects
 
 ### Java
 

@@ -65,6 +65,29 @@ section {
     padding: 20px;
 }
 
+/* #statsbox {} */
+
+.stats {
+    margin-bottom: 20px;
+    padding: 20px 40px 40px 40px;
+    background-color: #333;
+    border-radius: 12px;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 1), inset -2px 2px 2px rgba(128, 128, 128, 0.5);
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: end;
+}
+
+.stats img {
+    width: 50%;
+}
+
+
+.stats:hover {
+    transform: scale(1.01);
+}
+
+
 .project {
     margin-bottom: 20px;
     padding: 20px 40px 40px 40px;

@@ -7,6 +7,13 @@ document.addEventListener("DOMContentLoaded", function (arg) {
     }).then(data => {
         const profile = document.querySelector(`#profile`);
         profile.appendChild(loadProfile(data.profile));
+
+        const stats = document.querySelector(`#statsbox`);
+        data.statistics.forEach(statsData => {
+            const statElement = createStatsElement(statsData);
+            stats.appendChild(statElement);
+        });
+
         const projects = document.querySelector(`#projects`);
         data.projects.forEach(projectData => {
             const projectElement = createProjectElement(projectData);
@@ -56,9 +63,6 @@ function showSnackbar(title, duration) {
 
 
 }
-
-
-
 
 function createProjectElement(projectData) {
     const projectContainer = document.createElement('div');
@@ -267,4 +271,17 @@ function loadProfile(profileData) {
     return profileContainer;
 }
 
+function createStatsElement(statsData) {
+    const projectContainer = document.createElement('div');
+    projectContainer.classList.add('stats');
+
+    const stat = document.createElement('img');
+    stat.src = statsData.stats;
+    projectContainer.appendChild(stat);
+
+    const toplang = document.createElement('img');
+    toplang.src = statsData.toplang;
+    projectContainer.appendChild(toplang);
+    return projectContainer;
+}
 
