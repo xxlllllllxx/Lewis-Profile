@@ -1,0 +1,362 @@
+{
+    "profile": {
+        "name": "Masallo, Lewis Daveriel",
+        "course": "Bachelor of Science in Information Technology (Major in Web and Application)",
+        "learned_languages": [
+            "Java",
+            "PHP",
+            "Python",
+            "JavaScript",
+            "C#",
+            "C",
+            "Dart"
+        ],
+        "platforms": [
+            "Web Technologies",
+            "Mobile Applications",
+            "Game Development (Game Maker Engine)",
+            "Windows Application",
+            "Flutter Application"
+        ],
+        "socials": {
+            "facebook": {
+                "link": "https://www.facebook.com/lewismasallo",
+                "badge": "https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"
+            },
+            "gmail": {
+                "link": "mailto:lewismasallo@gmail.com",
+                "badge": "https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"
+            },
+            "messenger": {
+                "link": "https://m.me/lewismasallo",
+                "badge": "https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white"
+            },
+            "linkedin": {
+                "link": "https://www.linkedin.com/in/lewis-daveriel-masallo-0881521ba/",
+                "badge": "https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
+            },
+            "gitlab": {
+                "link": "https://gitlab.com/lewisdaverielmasallo",
+                "badge": "https://img.shields.io/badge/gitlab-202030?style=for-the-badge&logo=gitlab"
+            },
+            "github": [
+                {
+                    "link": "https://github.com/bsuscbsit",
+                    "badge": "https://img.shields.io/badge/bsuscbsit-202020?style=for-the-badge&logo=github&logoColor=white"
+                },
+                {
+                    "link": "https://github.com/xxlllllllxx",
+                    "badge": "https://img.shields.io/badge/xxlllllllxx-202020?style=for-the-badge&logo=github&logoColor=white"
+                },
+                {
+                    "link": "https://github.com/lewisdaverielmasallo",
+                    "badge": "https://img.shields.io/badge/lewisdaverielmasallo-202020?style=for-the-badge&logo=github&logoColor=white"
+                }
+            ]
+        }
+    },
+    "projects": [
+        {
+            "title": "Mobile Application: ",
+            "project": "Affordawash App",
+            "link_badge": "https://img.shields.io/badge/GitHub_affordawash_application-100000?style=for-the-badge&logo=github",
+            "link": "https://github.com/xxlllllllxx/Affordawash_App",
+            "role": "Main Programmer",
+            "description": "Affordawash App is a mobile application designed to help businesses keep track of sales and manage their operations effectively.",
+            "features": [
+                "Sales Tracking",
+                "Inventory Management",
+                "Customer Management"
+            ],
+            "technologies_used": [
+                {
+                    "name": "Java",
+                    "badge": "https://img.shields.io/badge/Java-5382a1?style=for-the-badge&logo=coffeescript&logoColor=f89820"
+                },
+                {
+                    "name": "Android SDK",
+                    "badge": "https://img.shields.io/badge/Android_Studio-blue?style=for-the-badge&logo=android&logoColor=green"
+                },
+                {
+                    "name": "SQLite Database",
+                    "badge": "https://img.shields.io/badge/SQLite-00000f?style=for-the-badge&logo=sqlite"
+                }
+            ]
+        },
+        {
+            "title": "Web Application: ",
+            "project": "Affordawash Web",
+            "link_badge": "https://img.shields.io/badge/GitHub_affordawash_website-100000?style=for-the-badge&logo=github",
+            "link": "https://github.com/xxlllllllxx/Affordawash_Web",
+            "role": "Main Programmer",
+            "description": "Affordawash Web is a web-based application developed to complement the mobile app by providing a web interface for managing sales, inventory, and customer information.",
+            "features": [
+                "Sales Tracking",
+                "Inventory Management",
+                "Customer Management"
+            ],
+            "technologies_used": [
+                {
+                    "name": "PHP CodeIgniter",
+                    "badge": "https://img.shields.io/badge/PHP_CodeIgniter-777BB4?style=for-the-badge&logo=codeigniter"
+                },
+                {
+                    "name": "MySQL Database",
+                    "badge": "https://img.shields.io/badge/MySQL_database-00000F?style=for-the-badge&logo=mysql"
+                },
+                {
+                    "name": "HTML",
+                    "badge": "https://img.shields.io/badge/HTML-103030?style=for-the-badge&logo=html5"
+                },
+                {
+                    "name": "CSS",
+                    "badge": "https://img.shields.io/badge/CSS-103030?style=for-the-badge&logo=css3"
+                },
+                {
+                    "name": "JavaScript",
+                    "badge": "https://img.shields.io/badge/JavaScript-103030?style=for-the-badge&logo=javascript"
+                }
+            ]
+        },
+        {
+            "title": "Web Application: ",
+            "project": "Luminaire Lane",
+            "link_badge": "https://img.shields.io/badge/GitHub_luminaire_lane-100000?style=for-the-badge&logo=github",
+            "link": "https://github.com/xxlllllllxx/WST2_Project",
+            "role": "Main Programmer",
+            "description": "Luminaire Lane is a web-based marketplace providing a platform for sellers to list and manage products and for buyers to browse and purchase items.",
+            "features": [
+                "Seller and Buyer Login and Logout",
+                "Seller Control Panel",
+                "Shopping Cart",
+                "PayPal Payment Method"
+            ],
+            "technologies_used": [
+                {
+                    "name": "PHP",
+                    "badge": "https://img.shields.io/badge/PHP-103030?style=for-the-badge&logo=php"
+                },
+                {
+                    "name": "MySQL Database",
+                    "badge": "https://img.shields.io/badge/MySQL_database-00000F?style=for-the-badge&logo=mysql"
+                },
+                {
+                    "name": "HTML",
+                    "badge": "https://img.shields.io/badge/HTML-103030?style=for-the-badge&logo=html5"
+                },
+                {
+                    "name": "CSS",
+                    "badge": "https://img.shields.io/badge/CSS-103030?style=for-the-badge&logo=css3"
+                },
+                {
+                    "name": "JavaScript",
+                    "badge": "https://img.shields.io/badge/JavaScript-103030?style=for-the-badge&logo=javascript"
+                },
+                {
+                    "name": "PayPal API Integration",
+                    "badge": "https://img.shields.io/badge/PayPal_API-00457C?style=for-the-badge&logo=paypal"
+                }
+            ],
+            "hosting_status": "Down"
+        },
+        {
+            "title": "Desktop Application: ",
+            "project": "SPTC Application",
+            "link": "https://github.com/BsuscBsit/SPTC-APP",
+            "link_badge": "https://img.shields.io/badge/GitHub_sptc_app-100000?style=for-the-badge&logo=github",
+            "role": "Main Programmer",
+            "description": "SPTC-App is a capstone project developed as a Windows Presentation Foundation (WPF) application for managing a transportation cooperative.",
+            "features": [
+                "Member Management",
+                "Franchise Information",
+                "Operators and Drivers",
+                "Violation and Suspension",
+                "Reports and Analytics",
+                "Multiple Users and Access"
+            ],
+            "technologies_used": [
+                {
+                    "name": "C#",
+                    "badge": "https://img.shields.io/badge/C_sharp-239120?style=for-the-badge&logo=c%23"
+                },
+                {
+                    "name": ".NET",
+                    "badge": "https://img.shields.io/badge/dotnet-512BD4?style=for-the-badge&logo=.net"
+                },
+                {
+                    "name": "WPF (Windows Presentation Foundation)",
+                    "badge": "https://img.shields.io/badge/WPF-0078D6?style=for-the-badge&logo=windows"
+                },
+                {
+                    "name": "MySQL Database",
+                    "badge": "https://img.shields.io/badge/MySQL_database-00000F?style=for-the-badge&logo=mysql"
+                }
+            ],
+            "hardware_integration": [
+                {
+                    "name": "Digital Camera",
+                    "badge": "https://img.shields.io/badge/Digital_Camera-103030?style=for-the-badge&logo=cloudcannon"
+                },
+                {
+                    "name": "Signature Pad",
+                    "badge": "https://img.shields.io/badge/Signature_Pad-103030?style=for-the-badge&logo=powerpages"
+                }
+            ]
+        },
+        {
+            "title": "Embedded System: ",
+            "project": "Arduino-AutoScale",
+            "link_badge": "https://img.shields.io/badge/GitHub_autoscale-100000?style=for-the-badge&logo=github",
+            "link": "https://github.com/xxlllllllxx/Arduino-AutoScale",
+            "role": "Main Programmer",
+            "description": "Arduino-AutoScale is an embedded system project aimed at building a digital scale system capable of accurately measuring weights and displaying them through a user-friendly interface.",
+            "features": [
+                "Weight Measurement",
+                "Custom Tkinter GUI",
+                "Data Visualization"
+            ],
+            "technologies_used": [
+                {
+                    "name": "Arduino",
+                    "badge": "https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino"
+                },
+                {
+                    "name": "Load Cell Sensor",
+                    "badge": "https://img.shields.io/badge/Load_Cell_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=black"
+                },
+                {
+                    "name": "Python",
+                    "badge": "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54"
+                },
+                {
+                    "name": "Tkinter (custom GUI)",
+                    "badge": "https://img.shields.io/badge/Tkinter-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54"
+                },
+                {
+                    "name": "Matplotlib",
+                    "badge": "https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54"
+                }
+            ]
+        },
+        {
+            "title": "Embedded System: ",
+            "project": "Arduino-AutoTrash",
+            "link_badge": "https://img.shields.io/badge/GitHub_autotrash-100000?style=for-the-badge&logo=github",
+            "link": "https://github.com/xxlllllllxx/Arduino-AutoTrash",
+            "role": "Main Programmer",
+            "description": "Arduino-AutoTrash is an embedded system project aimed at building a smart trash bin utilizing Arduino and various sensors to detect parameters related to waste management.",
+            "features": [
+                "Infrared Sensor",
+                "Ultrasonic Sensor",
+                "Moisture Sensor",
+                "Inductive Sensor"
+            ],
+            "technologies_used": [
+                {
+                    "name": "Arduino",
+                    "badge": "https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino"
+                },
+                {
+                    "name": "Infrared Sensor",
+                    "badge": "https://img.shields.io/badge/Infrared_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=red"
+                },
+                {
+                    "name": "Ultrasonic Sensor",
+                    "badge": "https://img.shields.io/badge/Ultrasonic_Sensor-6A6B6E?style=for-the-badge&logo=arduino"
+                },
+                {
+                    "name": "Moisture Sensor",
+                    "badge": "https://img.shields.io/badge/Moisture_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=green"
+                },
+                {
+                    "name": "Inductive Sensor",
+                    "badge": "https://img.shields.io/badge/Inductive_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=blue"
+                }
+            ]
+        },
+        {
+            "title": "Python Projects",
+            "link_badge": "https://img.shields.io/badge/GitHub_Python_files-100000?style=for-the-badge&logo=github",
+            "link": "https://github.com/xxlllllllxx/Python-Files",
+            "description": "Some random python projects with different APIs and Libraries",
+            "role": "Main Programmer",
+            "technologies_used": [
+                {
+                    "name": "Python",
+                    "badge": "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54"
+                }
+            ]
+        },
+        {
+            "title": "Game Maker Studio: ",
+            "project": "Mobile and Windows Game",
+            "link_badge": "https://img.shields.io/badge/Github_mobigame_activity-100000?style=for-the-badge&logo=github",
+            "link": "https://github.com/xxlllllllxx/MobiGameActivity",
+            "role": "Main Programmer",
+            "description": "This repository has 2 games namely Space Rocks and Car game.",
+            "games": [
+                {
+                    "title": "Space Rocks",
+                    "features": [
+                        "Tutorial assets designed to help users navigate the game maker studio",
+                        "Customized",
+                        "Added game levels and level selection",
+                        "Added powerups"
+                    ]
+                },
+                {
+                    "title": "Car Game",
+                    "features": [
+                        "A game of navigation where a tank should park in a designated parking lot",
+                        "Got assets online",
+                        "Own game mechanics",
+                        "With levels and level selection"
+                    ]
+                }
+            ],
+            "technologies_used": [
+                {
+                    "name": "Game Maker Studio",
+                    "badge": "https://img.shields.io/badge/Game_Maker_studio-000000?style=for-the-badge&logo=gamemaker"
+                }
+            ]
+        },
+        {
+            "title": "Flutter Application: ",
+            "project": "WorkSched",
+            "link_badge": "https://img.shields.io/badge/Flutter_Worksched-02569B?style=for-the-badge&logo=flutter",
+            "link": "https://ess.optimum-source.com/",
+            "role": "UI Programmer",
+            "description": "WorkSched is a project developed during my internship period. It is a private repository designed to help manage work schedules efficiently.",
+            "sample": [
+                {
+                    "title": "WorkSched Dashboard",
+                    "link": "https://github.com/lewisdaverielmasallo/worksched_dashboard",
+                    "badge": "https://img.shields.io/badge/WorkSched_dashboard-02569B?style=for-the-badge&logo=flutter"
+                }
+            ],
+            "technologies_used": [
+                {
+                    "name": "Flutter",
+                    "badge": "https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter"
+                },
+                {
+                    "name": "Material Design",
+                    "badge": "https://img.shields.io/badge/Material_3-indigo?style=for-the-badge&logo=materialdesign&logoColor=white"
+                },
+                {
+                    "name": "Node.js",
+                    "badge": "https://img.shields.io/badge/Node_js-202020?style=for-the-badge&logo=node.js"
+                },
+                {
+                    "name": "MySQL",
+                    "badge": "https://img.shields.io/badge/MySQL_database-00000F?style=for-the-badge&logo=mysql"
+                },
+                {
+                    "name": "Sourcetree",
+                    "badge": "https://img.shields.io/badge/Sourcetree-0052CC?style=for-the-badge&logo=sourcetree"
+                }
+            ]
+        }
+    ]
+}

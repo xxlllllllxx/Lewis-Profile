@@ -52,11 +52,11 @@ header {
     cursor: grabbing !important;
 }
 
-img {
+.shield {
     transition: transform 0.2s ease;
 }
 
-img:hover {
+.shield:hover {
     transform: scale(1.05);
 }
 
@@ -163,4 +163,31 @@ ul li::before {
 img {
     border: 1px solid #101010;
     border-radius: 8px;
+}
+
+.tech-hardware-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+#snackbar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    padding: 15px 30px 15px 15px;
+    align-items: center;
+    display: none;
+    background-color: #335;
+    border-radius: 8px;
+
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 1), inset -1px 1px 1px rgba(128, 128, 128, 0.5);
+}
+
+#close_snackbar {
+    border: none;
+    margin-right: 10px;
+    height: 24px;
+    width: 24px;
 }
