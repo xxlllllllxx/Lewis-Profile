@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function (arg) {
     });
 });
 
+
 function loadInformation(data) {
     const profile = document.querySelector(`#profile`);
     profile.appendChild(loadProfile(data.profile));
@@ -25,14 +26,15 @@ function loadInformation(data) {
         stats.appendChild(statElement);
     });
 
-    const projects = document.querySelector(`#projects`);
+
+    const projects = document.querySelector(`#projbox`);
     data.projects.forEach(projectData => {
         const projectElement = createProjectElement(projectData);
+        projectElement.classList.add('snapper');
         projects.appendChild(projectElement);
     });
 
     const clickers = document.querySelectorAll(`.click`);
-
     clickers.forEach(clicker => {
         clicker.addEventListener('mousedown', (e) => {
             clicker.classList.add('mousedown');
@@ -52,7 +54,6 @@ function loadInformation(data) {
             clicker.classList.remove('mousedown');
         });
     });
-
 }
 
 function showSnackbar(title, duration) {
@@ -70,6 +71,7 @@ function showSnackbar(title, duration) {
 function createProjectElement(projectData) {
     const projectContainer = document.createElement('div');
     projectContainer.classList.add('project');
+    projectContainer.classList.add('snapper');
 
     const titleElement = document.createElement('h3');
     titleElement.innerHTML = `${projectData.title} ${projectData.project ? "<span class='click'>" + projectData.project + "</span>" : ""}`;
@@ -190,6 +192,17 @@ function createProjectElement(projectData) {
         projectContainer.appendChild(hostingElement);
     }
 
+    if (projectData.screenshots) {
+        const screnshotHolder = document.createElement('div');
+        projectData.screenshots.forEach((data) => {
+            const image = document.createElement("img");
+            image.style.maxWidth = "100%";
+            image.alt = data.name;
+            image.src = data.link;
+            screnshotHolder.appendChild(image);
+        });
+    }
+
 
     return projectContainer;
 }
@@ -276,8 +289,10 @@ function loadProfile(profileData) {
 
 function createStatsElement(statsData) {
     const projectContainer = document.createElement('div');
+    projectContainer.style.width = "100%";
     projectContainer.style.height = "400px";
     projectContainer.classList.add('stats');
+    projectContainer.classList.add('snapper');
 
     const cardholder = document.createElement('div');
     cardholder.classList.add('info-card');
@@ -322,6 +337,10 @@ function createStatsElement(statsData) {
     const toplang = document.createElement('img');
     toplang.src = statsData.toplang;
     projectContainer.appendChild(toplang);
+
+
+
     return projectContainer;
 }
+
 

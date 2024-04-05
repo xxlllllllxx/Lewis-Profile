@@ -2,16 +2,22 @@ body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    background-image: url("src/image/vecteezy_banner-poster-flyer-design-with-watercolor-pattern-on-dark_.jpg");
     background-size: 100%;
     color: #fff;
     user-select: none;
-    min-width: 1030px;
-    overflow: scroll;
+    min-width: 1080px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
+#backdrop {
+    position: fixed;
+    z-index: -99999;
+    height: 100vh;
+    border-radius: 0 !important;
+}
 
-div.content {
+.content {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -69,66 +75,7 @@ section {
     padding: 20px;
 }
 
-/* #statsbox {} */
 
-.stats {
-    margin-bottom: 20px;
-    padding: 20px 40px 20px 40px;
-    background-color: #333;
-    border-radius: 12px;
-    box-shadow: -4px 4px 4px rgba(0, 0, 0, 1), inset -2px 2px 2px rgba(128, 128, 128, 0.5);
-    transition: transform 0.2s ease;
-    display: flex;
-    align-items: start;
-    gap: 10px;
-}
-
-.info-card {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.stats img {
-    width: 50%;
-    border: none;
-    box-shadow: none !important;
-}
-
-
-.stats:hover {
-    transform: scale(1.01);
-}
-
-
-.project {
-    margin-bottom: 20px;
-    padding: 20px 40px;
-    background-color: #333;
-    border-radius: 12px;
-    box-shadow: -4px 4px 4px rgba(0, 0, 0, 1), inset -2px 2px 2px rgba(128, 128, 128, 0.5);
-    transition: transform 0.2s ease;
-}
-
-.project:hover {
-    transform: scale(1.01);
-}
-
-.project-bottom-nav {
-    display: flex;
-    justify-content: end;
-}
-
-.project-bottom-nav span {
-    margin-left: 20px;
-}
-
-.project-bottom-nav span:hover {
-    margin-left: 20px;
-    color: #007bff;
-    cursor: pointer;
-}
 
 b {
     font-weight: 900;
@@ -137,20 +84,6 @@ b {
 
 .tab {
     margin-left: 40px;
-}
-
-.project a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-.project a:hover {
-    text-decoration: underline;
-}
-
-.project-description {
-    margin-top: 10px;
-    margin-left: 10px;
 }
 
 /* Custom bullet points for list items */
@@ -229,9 +162,138 @@ img {
     width: 24px;
 }
 
-.toprepo-holder {
+
+/* STATISTICS */
+
+#statsbox {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 305%;
+    /* transform: rotateX(180deg); TOP SCROLLBAR CHEAT from praveenpuglia*/
+}
+
+.stats {
+    margin-bottom: 20px;
+    padding: 20px 40px;
+    background-color: rgba(20, 20, 20, 0.6);
+    border-radius: 12px;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 1), inset -2px 2px 2px rgba(128, 128, 128, 0.5);
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+
+}
+
+.info-card {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stats img {
+    width: 50%;
+    height: 100%;
+    border: none;
+    box-shadow: none !important;
+}
+
+.stats:hover {
+    transform: scale(1.01);
+}
+
+.stats .toprepo-holder {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.scroll {
+    padding: 12px;
+    overflow-x: scroll;
+    width: 100%;
+    /* transform: rotateX(180deg); TOP SCROLLBAR CHEAT*/
+    scroll-snap-type: x mandatory;
+
+}
+
+.scroll::-webkit-scrollbar-track {
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+/* PROJECTS */
+
+#projbox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 20px 40px;
+    background-color: rgba(10, 10, 20, 0.6);
+    border-radius: 12px;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 1), inset -2px 2px 2px rgba(128, 128, 128, 0.5);
+    transition: transform 0.2s ease;
+}
+
+.project:hover {
+    transform: scale(1.01);
+}
+
+.project-bottom-nav {
+    display: flex;
+    justify-content: end;
+}
+
+.project-bottom-nav span {
+    margin-left: 20px;
+}
+
+.project-bottom-nav span:hover {
+    margin-left: 20px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.project a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.project-description {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.snapper {
+    scroll-snap-align: center;
+    scroll-snap-stop: center;
+}
+
+::-webkit-scrollbar {
+    scroll-behavior: 10px;
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #202020;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid black;
+    background-color: rgba(20, 20, 20, 0.8);
 }
