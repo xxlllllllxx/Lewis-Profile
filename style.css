@@ -6,7 +6,10 @@ body {
     background-size: 100%;
     color: #fff;
     user-select: none;
+    min-width: 1030px;
+    overflow: scroll;
 }
+
 
 div.content {
     max-width: 1000px;
@@ -40,7 +43,7 @@ header {
 
 .header-nav a:hover {
     text-decoration: none;
-    color: green;
+    color: blue;
 }
 
 .click:hover {
@@ -53,6 +56,7 @@ header {
 }
 
 .shield {
+    /* height: 32px; */
     transition: transform 0.2s ease;
 }
 
@@ -223,4 +227,11 @@ img {
     margin-right: 10px;
     height: 24px;
     width: 24px;
+}
+
+.toprepo-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }

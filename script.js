@@ -1,61 +1,64 @@
 document.addEventListener("DOMContentLoaded", function (arg) {
+    const close = document.querySelector('#close_snackbar');
+    close.addEventListener(`click`, (e) => {
+        snackbar.style.display = 'none';
+    });
     fetch('src/data.json').then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
         return response.json();
     }).then(data => {
-        const profile = document.querySelector(`#profile`);
-        profile.appendChild(loadProfile(data.profile));
-
-        const stats = document.querySelector(`#statsbox`);
-        data.statistics.forEach(statsData => {
-            const statElement = createStatsElement(statsData);
-            stats.appendChild(statElement);
-        });
-
-        const projects = document.querySelector(`#projects`);
-        data.projects.forEach(projectData => {
-            const projectElement = createProjectElement(projectData);
-            projects.appendChild(projectElement);
-        });
-
-        const clickers = document.querySelectorAll(`.click`);
-
-        clickers.forEach(clicker => {
-            clicker.addEventListener('mousedown', (e) => {
-                clicker.classList.add('mousedown');
-                let title = e.target.childNodes[0].data;
-                if (title.length > 30) {
-                    title = title.substring(0, 27) + '...';
-                }
-                showSnackbar(`${title} copied!`, 3000);
-            });
-
-            clicker.addEventListener('mouseleave', (e) => {
-                clicker.classList.remove('mousedown');
-            });
-
-            clicker.addEventListener('mouseup', (e) => {
-                clicker.classList.remove('mousedown');
-            });
-        });
-
+        loadInformation(data);
     }).catch(error => {
         console.error('There was a problem fetching the data:', error);
     });
-
 });
+
+function loadInformation(data) {
+    const profile = document.querySelector(`#profile`);
+    profile.appendChild(loadProfile(data.profile));
+
+    const stats = document.querySelector(`#statsbox`);
+    data.statistics.forEach(statsData => {
+        const statElement = createStatsElement(statsData);
+        stats.appendChild(statElement);
+    });
+
+    const projects = document.querySelector(`#projects`);
+    data.projects.forEach(projectData => {
+        const projectElement = createProjectElement(projectData);
+        projects.appendChild(projectElement);
+    });
+
+    const clickers = document.querySelectorAll(`.click`);
+
+    clickers.forEach(clicker => {
+        clicker.addEventListener('mousedown', (e) => {
+            clicker.classList.add('mousedown');
+            let title = e.target.childNodes[0].data;
+            navigator.clipboard.writeText(title);
+            if (title.length > 30) {
+                title = title.substring(0, 27) + '...';
+            }
+            showSnackbar(`${title} copied!`, 3000);
+        });
+
+        clicker.addEventListener('mouseleave', (e) => {
+            clicker.classList.remove('mousedown');
+        });
+
+        clicker.addEventListener('mouseup', (e) => {
+            clicker.classList.remove('mousedown');
+        });
+    });
+
+}
 
 function showSnackbar(title, duration) {
     const snackbar = document.querySelector(`#snackbar`);
     snackbar.childNodes[2].textContent = title;
     snackbar.style.display = 'flex';
-
-    const close = snackbar.childNodes[1];
-    close.addEventListener(`click`, (e) => {
-        snackbar.style.display = 'none';
-    });
 
     setTimeout(() => {
         snackbar.style.display = 'none';
@@ -283,6 +286,8 @@ function createStatsElement(statsData) {
     const card = document.createElement(`div`);
     const title = document.createElement(`h3`);
     title.textContent = statsData.title;
+    title.classList.add('click');
+    title.style.marginBottom = "50px"
     card.appendChild(title);
     const name = document.createElement(`h5`);
     name.textContent = "Name: " + statsData.name;
@@ -290,9 +295,23 @@ function createStatsElement(statsData) {
     const start = document.createElement(`h5`);
     start.textContent = "Start Date: " + statsData.start;
     card.appendChild(start);
-    const toprepo = document.createElement(`h5`);
-    toprepo.textContent = "Top Repository: " + statsData.toprepo;
-    card.appendChild(toprepo);
+    const toprepoHolder = document.createElement('div');
+    toprepoHolder.classList.add('toprepo-holder');
+    const toprepo = document.createElement(`p`);
+    toprepo.style.fontSize = '0.83em';
+    toprepo.style.fontWeight = "bold";
+    toprepo.textContent = "Top Repository: ";
+    toprepoHolder.appendChild(toprepo);
+    const a = document.createElement('a');
+    a.target = '_blank';
+    a.href = statsData.toprepo_link;
+    const image = document.createElement('img');
+    image.style.width = "auto";
+    image.classList.add('shield');
+    image.src = statsData.toprepo;
+    a.appendChild(image);
+    toprepoHolder.appendChild(a);
+    card.appendChild(toprepoHolder);
     cardholder.appendChild(card);
 
     const stat = document.createElement('img');
