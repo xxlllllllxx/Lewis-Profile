@@ -8,7 +8,7 @@ body {
     min-width: 1080px;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    backgrount-image: url("./src/image/vecteezy_banner-poster-flyer-design-with-watercolor-pattern-on-dark_.jpg");
+    background-image: url("./src/image/vecteezy_banner-poster-flyer-design-with-watercolor-pattern-on-dark_.jpg");
 }
 
 #backdrop {
