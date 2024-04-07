@@ -14,6 +14,8 @@ body {
     position: fixed;
     z-index: -99999;
     height: 100vh;
+    width: 100vh;
+    min-width: 100%
     border-radius: 0 !important;
 }
 
