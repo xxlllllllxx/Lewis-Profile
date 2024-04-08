@@ -186,10 +186,17 @@ function createProjectElement(projectData) {
         techHardwareContainer.appendChild(hardwareContainer);
     }
 
-    if (projectData.hosting_status) {
-        const hostingElement = document.createElement('p');
-        hostingElement.innerHTML = `<b>Hosting: </b> ${projectData.hosting_status}`;
-        projectContainer.appendChild(hostingElement);
+    if (projectData.highlights) {
+        const highlighContainer = document.createElement('div');
+        highlighContainer.innerHTML = `<b>Highlights: </b>`;
+        const highlighList = document.createElement('ul');
+        projectData.highlights.forEach(text => {
+            const highlightItem = document.createElement('li');
+            highlightItem.textContent = text;
+            highlighList.appendChild(highlightItem);
+        });
+        highlighContainer.appendChild(highlighList);
+        projectContainer.appendChild(highlighContainer);
     }
 
     if (projectData.screenshots) {

@@ -89,6 +89,149 @@
     ],
     "projects": [
         {
+            "title": "Desktop Application: ",
+            "project": "SPTC Application",
+            "link": "https://github.com/BsuscBsit/SPTC-APP",
+            "link_badge": "https://img.shields.io/badge/GitHub_sptc_app-100000?style=for-the-badge&logo=github",
+            "role": "Main Programmer",
+            "description": "SPTC-App is a capstone project developed as a Windows Presentation Foundation (WPF) application for managing a transportation cooperative.",
+            "features": [
+                "Member Management",
+                "Franchise Information",
+                "Violation and Suspension",
+                "Reports and Analytics",
+                "Multiple Users and Access"
+            ],
+            "technologies_used": [
+                {
+                    "name": "C#",
+                    "badge": "https://img.shields.io/badge/C_sharp-239120?style=for-the-badge&logo=c%23"
+                },
+                {
+                    "name": ".NET",
+                    "badge": "https://img.shields.io/badge/dotnet-512BD4?style=for-the-badge&logo=.net"
+                },
+                {
+                    "name": "WPF (Windows Presentation Foundation)",
+                    "badge": "https://img.shields.io/badge/WPF-0078D6?style=for-the-badge&logo=windows"
+                },
+                {
+                    "name": "MySQL Database",
+                    "badge": "https://img.shields.io/badge/MySQL_database-00000F?style=for-the-badge&logo=mysql"
+                }
+            ],
+            "hardware_integration": [
+                {
+                    "name": "Digital Camera",
+                    "badge": "https://img.shields.io/badge/Digital_Camera-103030?style=for-the-badge&logo=cloudcannon"
+                },
+                {
+                    "name": "Signature Pad",
+                    "badge": "https://img.shields.io/badge/Signature_Pad-103030?style=for-the-badge&logo=powerpages"
+                }
+            ]
+        },
+        {
+            "title": "Embedded System: ",
+            "project": "Arduino-AutoScale",
+            "link_badge": "https://img.shields.io/badge/GitHub_autoscale-100000?style=for-the-badge&logo=github",
+            "link": "https://github.com/xxlllllllxx/Arduino-AutoScale",
+            "role": "Main Programmer",
+            "description": "Arduino-AutoScale is an embedded system project aimed at building a digital scale system capable of accurately measuring weights and displaying them through a user-friendly interface.",
+            "features": [
+                "Weight Measurement",
+                "Custom Tkinter GUI",
+                "Data Visualization"
+            ],
+            "technologies_used": [
+                {
+                    "name": "Arduino",
+                    "badge": "https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino"
+                },
+                {
+                    "name": "Python",
+                    "badge": "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54"
+                },
+                {
+                    "name": "Tkinter (custom GUI)",
+                    "badge": "https://img.shields.io/badge/Tkinter-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54"
+                },
+                {
+                    "name": "Matplotlib",
+                    "badge": "https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54"
+                }
+            ],
+            "hardware_integration": [
+                {
+                    "name": "Load Cell Sensor",
+                    "badge": "https://img.shields.io/badge/Load_Cell_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=black"
+                }
+            ],
+            "screenshots": [
+                {
+                    "name": "Main",
+                    "link": "./src/screenshot/autoscale/main.png"
+                },
+                {
+                    "name": "Calibration with weight",
+                    "link": "./src/screenshot/autoscale/wow.png"
+                },
+                {
+                    "name": "Calibration without weight",
+                    "link": "./src/screenshot/autoscale/ww.png"
+                },
+                {
+                    "name": "Graph",
+                    "link": "./src/screenshot/autoscale/graph.png"
+                }
+            ]
+        },
+        {
+            "title": "Embedded System: ",
+            "project": "Arduino-AutoTrash",
+            "link_badge": "https://img.shields.io/badge/GitHub_autotrash-100000?style=for-the-badge&logo=github",
+            "link": "https://github.com/xxlllllllxx/Arduino-AutoTrash",
+            "role": "Main Programmer",
+            "description": "Arduino-AutoTrash is an embedded system project aimed at building a smart trash bin utilizing Arduino and various sensors to detect parameters related to waste management.",
+            "features": [
+                "Sensor Data Display",
+                "Smart Navigation Algorithms",
+                "Trash Level Monitoring"
+            ],
+            "technologies_used": [
+                {
+                    "name": "Arduino",
+                    "badge": "https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino"
+                },
+                {
+                    "name": "Liquid Crystal Display",
+                    "badge": "https://img.shields.io/badge/liquid_cristal_i2c-black?style=for-the-badge&logo=gnometerminal"
+                }
+            ],
+            "hardware_integration": [
+                {
+                    "name": "Infrared Sensor",
+                    "badge": "https://img.shields.io/badge/Infrared_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=red"
+                },
+                {
+                    "name": "Ultrasonic Sensor",
+                    "badge": "https://img.shields.io/badge/Ultrasonic_Sensor-6A6B6E?style=for-the-badge&logo=arduino"
+                },
+                {
+                    "name": "Moisture Sensor",
+                    "badge": "https://img.shields.io/badge/Moisture_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=green"
+                },
+                {
+                    "name": "Inductive Sensor",
+                    "badge": "https://img.shields.io/badge/Inductive_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=blue"
+                },
+                {
+                    "name": "Capacitive Sensor",
+                    "badge": "https://img.shields.io/badge/Capacitive_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=blue"
+                }
+            ]
+        },
+        {
             "title": "Mobile Application: ",
             "project": "Affordawash App",
             "link_badge": "https://img.shields.io/badge/GitHub_affordawash_application-100000?style=for-the-badge&logo=github",
@@ -151,227 +294,6 @@
             ]
         },
         {
-            "title": "Web Application: ",
-            "project": "Luminaire Lane",
-            "link_badge": "https://img.shields.io/badge/GitHub_luminaire_lane-100000?style=for-the-badge&logo=github",
-            "link": "https://github.com/xxlllllllxx/WST2_Project",
-            "role": "Main Programmer",
-            "description": "Luminaire Lane is a web-based marketplace providing a platform for sellers to list and manage products and for buyers to browse and purchase items.",
-            "features": [
-                "Seller and Buyer Login and Logout",
-                "Seller Control Panel",
-                "Shopping Cart",
-                "PayPal Payment Method"
-            ],
-            "technologies_used": [
-                {
-                    "name": "PHP",
-                    "badge": "https://img.shields.io/badge/PHP-103030?style=for-the-badge&logo=php"
-                },
-                {
-                    "name": "MySQL Database",
-                    "badge": "https://img.shields.io/badge/MySQL_database-00000F?style=for-the-badge&logo=mysql"
-                },
-                {
-                    "name": "HTML",
-                    "badge": "https://img.shields.io/badge/HTML-103030?style=for-the-badge&logo=html5"
-                },
-                {
-                    "name": "CSS",
-                    "badge": "https://img.shields.io/badge/CSS-103030?style=for-the-badge&logo=css3"
-                },
-                {
-                    "name": "JavaScript",
-                    "badge": "https://img.shields.io/badge/JavaScript-103030?style=for-the-badge&logo=javascript"
-                },
-                {
-                    "name": "PayPal API Integration",
-                    "badge": "https://img.shields.io/badge/PayPal_API-00457C?style=for-the-badge&logo=paypal"
-                }
-            ],
-            "hosting_status": "Down"
-        },
-        {
-            "title": "Desktop Application: ",
-            "project": "SPTC Application",
-            "link": "https://github.com/BsuscBsit/SPTC-APP",
-            "link_badge": "https://img.shields.io/badge/GitHub_sptc_app-100000?style=for-the-badge&logo=github",
-            "role": "Main Programmer",
-            "description": "SPTC-App is a capstone project developed as a Windows Presentation Foundation (WPF) application for managing a transportation cooperative.",
-            "features": [
-                "Member Management",
-                "Franchise Information",
-                "Operators and Drivers",
-                "Violation and Suspension",
-                "Reports and Analytics",
-                "Multiple Users and Access"
-            ],
-            "technologies_used": [
-                {
-                    "name": "C#",
-                    "badge": "https://img.shields.io/badge/C_sharp-239120?style=for-the-badge&logo=c%23"
-                },
-                {
-                    "name": ".NET",
-                    "badge": "https://img.shields.io/badge/dotnet-512BD4?style=for-the-badge&logo=.net"
-                },
-                {
-                    "name": "WPF (Windows Presentation Foundation)",
-                    "badge": "https://img.shields.io/badge/WPF-0078D6?style=for-the-badge&logo=windows"
-                },
-                {
-                    "name": "MySQL Database",
-                    "badge": "https://img.shields.io/badge/MySQL_database-00000F?style=for-the-badge&logo=mysql"
-                }
-            ],
-            "hardware_integration": [
-                {
-                    "name": "Digital Camera",
-                    "badge": "https://img.shields.io/badge/Digital_Camera-103030?style=for-the-badge&logo=cloudcannon"
-                },
-                {
-                    "name": "Signature Pad",
-                    "badge": "https://img.shields.io/badge/Signature_Pad-103030?style=for-the-badge&logo=powerpages"
-                }
-            ]
-        },
-        {
-            "title": "Embedded System: ",
-            "project": "Arduino-AutoScale",
-            "link_badge": "https://img.shields.io/badge/GitHub_autoscale-100000?style=for-the-badge&logo=github",
-            "link": "https://github.com/xxlllllllxx/Arduino-AutoScale",
-            "role": "Main Programmer",
-            "description": "Arduino-AutoScale is an embedded system project aimed at building a digital scale system capable of accurately measuring weights and displaying them through a user-friendly interface.",
-            "features": [
-                "Weight Measurement",
-                "Custom Tkinter GUI",
-                "Data Visualization"
-            ],
-            "technologies_used": [
-                {
-                    "name": "Arduino",
-                    "badge": "https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino"
-                },
-                {
-                    "name": "Load Cell Sensor",
-                    "badge": "https://img.shields.io/badge/Load_Cell_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=black"
-                },
-                {
-                    "name": "Python",
-                    "badge": "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54"
-                },
-                {
-                    "name": "Tkinter (custom GUI)",
-                    "badge": "https://img.shields.io/badge/Tkinter-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54"
-                },
-                {
-                    "name": "Matplotlib",
-                    "badge": "https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54"
-                }
-            ],
-            "screenshots": [
-                {
-                    "name": "Main",
-                    "link": "./src/screenshot/autoscale/main.png"
-                },
-                {
-                    "name": "Calibration with weight",
-                    "link": "./src/screenshot/autoscale/wow.png"
-                },
-                {
-                    "name": "Calibration without weight",
-                    "link": "./src/screenshot/autoscale/ww.png"
-                },
-                {
-                    "name": "Graph",
-                    "link": "./src/screenshot/autoscale/graph.png"
-                }
-            ]
-        },
-        {
-            "title": "Embedded System: ",
-            "project": "Arduino-AutoTrash",
-            "link_badge": "https://img.shields.io/badge/GitHub_autotrash-100000?style=for-the-badge&logo=github",
-            "link": "https://github.com/xxlllllllxx/Arduino-AutoTrash",
-            "role": "Main Programmer",
-            "description": "Arduino-AutoTrash is an embedded system project aimed at building a smart trash bin utilizing Arduino and various sensors to detect parameters related to waste management.",
-            "features": [
-                "Infrared Sensor",
-                "Ultrasonic Sensor",
-                "Moisture Sensor",
-                "Inductive Sensor"
-            ],
-            "technologies_used": [
-                {
-                    "name": "Arduino",
-                    "badge": "https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino"
-                },
-                {
-                    "name": "Infrared Sensor",
-                    "badge": "https://img.shields.io/badge/Infrared_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=red"
-                },
-                {
-                    "name": "Ultrasonic Sensor",
-                    "badge": "https://img.shields.io/badge/Ultrasonic_Sensor-6A6B6E?style=for-the-badge&logo=arduino"
-                },
-                {
-                    "name": "Moisture Sensor",
-                    "badge": "https://img.shields.io/badge/Moisture_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=green"
-                },
-                {
-                    "name": "Inductive Sensor",
-                    "badge": "https://img.shields.io/badge/Inductive_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=blue"
-                }
-            ]
-        },
-        {
-            "title": "Python Projects",
-            "link_badge": "https://img.shields.io/badge/GitHub_Python_files-100000?style=for-the-badge&logo=github",
-            "link": "https://github.com/xxlllllllxx/Python-Files",
-            "description": "Some random python projects with different APIs and Libraries",
-            "role": "Main Programmer",
-            "technologies_used": [
-                {
-                    "name": "Python",
-                    "badge": "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54"
-                }
-            ]
-        },
-        {
-            "title": "Game Maker Studio: ",
-            "project": "Mobile and Windows Game",
-            "link_badge": "https://img.shields.io/badge/Github_mobigame_activity-100000?style=for-the-badge&logo=github",
-            "link": "https://github.com/xxlllllllxx/MobiGameActivity",
-            "role": "Main Programmer",
-            "description": "This repository has 2 games namely Space Rocks and Car game.",
-            "games": [
-                {
-                    "title": "Space Rocks",
-                    "features": [
-                        "Tutorial assets designed to help users navigate the game maker studio",
-                        "Customized",
-                        "Added game levels and level selection",
-                        "Added powerups"
-                    ]
-                },
-                {
-                    "title": "Car Game",
-                    "features": [
-                        "A game of navigation where a tank should park in a designated parking lot",
-                        "Got assets online",
-                        "Own game mechanics",
-                        "With levels and level selection"
-                    ]
-                }
-            ],
-            "technologies_used": [
-                {
-                    "name": "Game Maker Studio",
-                    "badge": "https://img.shields.io/badge/Game_Maker_studio-000000?style=for-the-badge&logo=gamemaker"
-                }
-            ]
-        },
-        {
             "title": "Flutter Application: ",
             "project": "WorkSched",
             "link_badge": "https://img.shields.io/badge/Flutter_Worksched-02569B?style=for-the-badge&logo=flutter",
@@ -405,6 +327,94 @@
                 {
                     "name": "Sourcetree",
                     "badge": "https://img.shields.io/badge/Sourcetree-0052CC?style=for-the-badge&logo=sourcetree"
+                }
+            ]
+        },
+        {
+            "title": "Web Application: ",
+            "project": "Luminaire Lane",
+            "link_badge": "https://img.shields.io/badge/GitHub_luminaire_lane-100000?style=for-the-badge&logo=github",
+            "link": "https://github.com/xxlllllllxx/WST2_Project",
+            "role": "Main Programmer",
+            "description": "Luminaire Lane is a web-based marketplace providing a platform for sellers to list and manage products and for buyers to browse and purchase items.",
+            "features": [
+                "Seller Control Panel",
+                "Shopping Cart",
+                "PayPal Payment Method"
+            ],
+            "technologies_used": [
+                {
+                    "name": "PHP",
+                    "badge": "https://img.shields.io/badge/PHP-103030?style=for-the-badge&logo=php"
+                },
+                {
+                    "name": "MySQL Database",
+                    "badge": "https://img.shields.io/badge/MySQL_database-00000F?style=for-the-badge&logo=mysql"
+                },
+                {
+                    "name": "Bootstrap",
+                    "badge": "https://img.shields.io/badge/bootstrap-indigo?style=for-the-badge&logo=bootstrap"
+                },
+                {
+                    "name": "JQuery",
+                    "badge": "https://img.shields.io/badge/Jquery-black?style=for-the-badge&logo=jQuery&logoColor=blue"
+                },
+                {
+                    "name": "PayPal API Integration",
+                    "badge": "https://img.shields.io/badge/PayPal_API-00457C?style=for-the-badge&logo=paypal"
+                }
+            ]
+        },
+        {
+            "title": "Python Projects",
+            "link_badge": "https://img.shields.io/badge/GitHub_Python_files-100000?style=for-the-badge&logo=github",
+            "link": "https://github.com/xxlllllllxx/Python-Files",
+            "description": "Some random python projects with different APIs and Libraries",
+            "role": "Main Programmer",
+            "technologies_used": [
+                {
+                    "name": "Python",
+                    "badge": "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54"
+                }
+            ],
+            "highlights": [
+                "Crypto API",
+                "Artificial Intelligence API",
+                "Pytube Library",
+                "Quantum software development kit"
+            ]
+        },
+        {
+            "title": "Game Maker Studio: ",
+            "project": "Mobile and Windows Game",
+            "link_badge": "https://img.shields.io/badge/Github_mobigame_activity-100000?style=for-the-badge&logo=github",
+            "link": "https://github.com/xxlllllllxx/MobiGameActivity",
+            "role": "Main Programmer",
+            "description": "This repository has 2 games namely Space Rocks and Car game.",
+            "games": [
+                {
+                    "title": "Space Rocks",
+                    "features": [
+                        "Tutorial assets designed to help users navigate the game maker studio",
+                        "Customized",
+                        "Added game levels and level selection",
+                        "Added powerups"
+                    ]
+                },
+                {
+                    "title": "Car Game",
+                    "features": [
+                        "A game of navigation where a tank should park in a designated parking lot",
+                        "Got assets online",
+                        "Own game mechanics",
+                        "With levels and level selection"
+                    ]
+                }
+            ],
+            "technologies_used": [
+                {
+                    "name": "Game Maker Studio",
+                    "badge": "https://img.shields.io/badge/Game_Maker_studio-000000?style=for-the-badge&logo=gamemaker"
                 }
             ]
         }
