@@ -30,7 +30,6 @@ function loadInformation(data) {
     const projects = document.querySelector(`#projbox`);
     data.projects.forEach(projectData => {
         const projectElement = createProjectElement(projectData);
-        projectElement.classList.add('snapper');
         projects.appendChild(projectElement);
     });
 
@@ -230,6 +229,7 @@ function createProjectElement(projectData) {
     project.classList.add('project_scroll');
 
     const projectContainer = document.createElement('div');
+    projectContainer.classList.add('snapper');
     projectContainer.classList.add('project');
     project.appendChild(projectContainer);
 
@@ -238,9 +238,7 @@ function createProjectElement(projectData) {
     linker.style.position = 'absolute';
     linker.style.top = "-37px";
     projectContainer.appendChild(linker);
-    projectContainer.addEventListener('click', (e) => {
-        location.href = `#${projectData.id}`;
-    });
+    projectContainer.addEventListener('click', (e) => { location.href = `#${projectData.id}` });
 
     const titleElement = document.createElement('h3');
     titleElement.innerHTML = `${projectData.title} ${projectData.project ? "<span class='click'>" + projectData.project + "</span>" : ""}`;
@@ -368,11 +366,12 @@ function createProjectElement(projectData) {
         projectContainer.appendChild(highlighContainer);
     }
 
-    if (projectData.screenshots) {
+    if (projectData.screenshots && (projectData.screenshots.length > 0)) {
+        project.classList.add('nav');
+        project.classList.add('scroll_x');
         const navigator = document.createElement('div');
         const nav = 1;
         navigator.id = "navigator";
-
         const prev = document.createElement('img');
         prev.src = './src/image/left.png';
         prev.style.cursor = 'pointer';
@@ -398,13 +397,16 @@ function createProjectElement(projectData) {
         project.appendChild(navigator);
         projectData.screenshots.forEach((data) => {
             const display = document.createElement('div');
-            display.style.height = "100%";
+            display.classList.add('snapper');
+            display.style.maxWidth = "980px";
+            display.style.minWidth = "980px";
+            display.style.justifyContent = "center";
             if (Array.isArray(data)) {
                 console.log("ARRAY: " + data);
             } else {
-
                 console.log("MAP" + data);
                 const image = document.createElement("img");
+                image.style.height = "100%";
                 image.alt = data.name;
                 image.src = data.link;
                 display.appendChild(image);
@@ -412,9 +414,6 @@ function createProjectElement(projectData) {
 
             project.appendChild(display);
         });
-
-
-
 
     }
 
