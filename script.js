@@ -389,6 +389,7 @@ function createProjectElement(projectData) {
             linker2.style.height = "10px";
             linker2.style.backgroundColor = "red";
             linker2.style.marginLeft = "-20px"
+            display.addEventListener('click', (e) => { location.href = `#${projectData.id}_${ind + 1}` });
             display.appendChild(linker2);
 
 
@@ -397,7 +398,6 @@ function createProjectElement(projectData) {
             display.style.minWidth = "980px";
             display.style.justifyContent = "center";
             if (Array.isArray(data)) {
-                console.log("ARRAY: " + data);
                 const cont = document.createElement('div');
                 cont.style.display = 'flex';
                 cont.style.flexDirection = 'row';
@@ -409,7 +409,6 @@ function createProjectElement(projectData) {
                 });
                 display.appendChild(cont);
             } else {
-                console.log("MAP" + data);
                 const image = document.createElement("img");
                 image.style.height = "100%";
                 image.alt = data.name;
