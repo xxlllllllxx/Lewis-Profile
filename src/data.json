@@ -140,7 +140,26 @@
                     "badge": "https://img.shields.io/badge/Signature_Pad-103030?style=for-the-badge&logo=powerpages"
                 }
             ],
-            "screenshots": []
+            "screenshots": [
+                {
+                    "name": "Main",
+                    "link": "./src/screenshot/autoscale/main.png"
+                },
+                [
+                    {
+                        "name": "Calibration with weight",
+                        "link": "./src/screenshot/autoscale/wow.png"
+                    },
+                    {
+                        "name": "Calibration without weight",
+                        "link": "./src/screenshot/autoscale/ww.png"
+                    }
+                ],
+                {
+                    "name": "Graph",
+                    "link": "./src/screenshot/autoscale/graph.png"
+                }
+            ]
         },
         {
             "id": "p002",

@@ -9,6 +9,7 @@ body {
     min-height: 670px;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
     /* background-image: url("./src/image/vecteezy_banner-poster-flyer-design-with-watercolor-pattern-on-dark_.jpg"); */
 }
 
@@ -278,17 +279,19 @@ img {
 
 .project_scroll {
     display: flex;
-    overflow: hidden;
     min-height: 580px !important;
     max-height: 580px !important;
     flex-direction: row;
     padding: 10px;
     gap: 40px;
-    position: relative;
     transition: transform 0.2s ease;
 }
 
-.project_scroll:hover #navigator {
+.top {
+    position: relative;
+}
+
+.top:hover .navigator {
     display: flex;
 }
 
@@ -359,5 +362,5 @@ img {
 }
 
 .nav {
-    overflow: hidden;
+    /* overflow: hidden; */
 }

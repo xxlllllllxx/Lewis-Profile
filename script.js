@@ -225,19 +225,24 @@ function createStatsElement(statsData) {
 }
 
 function createProjectElement(projectData) {
+    const top = document.createElement('div');
+    top.classList.add('top');
     const project = document.createElement('div');
     project.classList.add('project_scroll');
+    top.appendChild(project);
 
     const projectContainer = document.createElement('div');
+    projectContainer.style.position = "relative";
     projectContainer.classList.add('snapper');
     projectContainer.classList.add('project');
-    projectContainer.id = projectData.id + "_0";
     project.appendChild(projectContainer);
 
     const linker = document.createElement('div');
     linker.id = projectData.id;
     linker.style.position = 'absolute';
-    linker.style.top = "-37px";
+    linker.style.top = "-47px";
+    linker.style.width = "975px";
+    linker.style.marginLeft = "-40px"
     projectContainer.appendChild(linker);
     projectContainer.addEventListener('click', (e) => { location.href = `#${projectData.id}` });
 
@@ -370,17 +375,39 @@ function createProjectElement(projectData) {
     if (projectData.screenshots && (projectData.screenshots.length > 0)) {
         project.classList.add('nav');
         project.classList.add('scroll');
-        const navigation = new Navigation(`#${projectData.id}_`, projectData.screenshots.length);
-        project.appendChild(navigation.get());
+        const navigation = new Navigation(projectData.id, projectData.screenshots.length);
+        top.appendChild(navigation.get());
         projectData.screenshots.forEach((data, ind) => {
             const display = document.createElement('div');
-            display.id = projectData.id + "_" + ind + 1;
+            display.style.position = "relative";
+            const linker2 = document.createElement('div');
+            linker2.id = `${projectData.id}_${ind + 1}`;
+            linker2.style.position = 'absolute';
+            linker2.style.top = "-37px";
+            linker2.style.top = "-47px";
+            linker2.style.width = "975px";
+            linker2.style.height = "10px";
+            linker2.style.backgroundColor = "red";
+            linker2.style.marginLeft = "-20px"
+            display.appendChild(linker2);
+
+
             display.classList.add('snapper');
             display.style.maxWidth = "980px";
             display.style.minWidth = "980px";
             display.style.justifyContent = "center";
             if (Array.isArray(data)) {
                 console.log("ARRAY: " + data);
+                const cont = document.createElement('div');
+                cont.style.display = 'flex';
+                cont.style.flexDirection = 'row';
+                data.forEach(datum => {
+                    const image = document.createElement("img");
+                    image.alt = datum.name;
+                    image.src = datum.link;
+                    cont.append(image);
+                });
+                display.appendChild(cont);
             } else {
                 console.log("MAP" + data);
                 const image = document.createElement("img");
@@ -396,7 +423,7 @@ function createProjectElement(projectData) {
     }
 
 
-    return project;
+    return top;
 }
 
 class Navigation {
@@ -404,26 +431,25 @@ class Navigation {
         this.id = id;
         this.count = count;
         this.navigator = document.createElement('div');
-        this.nav = 1;
+        this.nav = 0;
         this.navigator.classList.add("navigator");
         this.prev = document.createElement('img');
         this.prev.src = './src/image/left.png';
         this.prev.style.cursor = 'pointer';
         this.prev.addEventListener('click', (e) => {
-            prev();
+            this.prevClick();
         });
         this.navigator.appendChild(this.prev);
-        const num = document.createElement('h3');
-        num.textContent = this.nav;
-        this.navigator.appendChild(num);
+        this.numText = document.createElement('h3');
+        this.numText.textContent = this.nav;
+        this.navigator.appendChild(this.numText);
         this.next = document.createElement('img');
         this.next.src = './src/image/right.png';
         this.next.style.cursor = 'pointer';
         this.next.addEventListener('click', (e) => {
-            next();
+            this.nextClick();
         });
         this.navigator.appendChild(this.next);
-        console.log(this.navigator);
         this.update();
     }
     get() {
@@ -431,7 +457,8 @@ class Navigation {
     }
 
     update() {
-        if (this.nav <= 1) {
+        this.numText.textContent = this.nav + 1;
+        if (this.nav < 1) {
             this.prev.style.visibility = "hidden";
         } else {
             this.prev.style.visibility = "visible";
@@ -443,10 +470,14 @@ class Navigation {
         }
     }
 
-    next(e) {
+    nextClick() {
+        location.href = `#${this.id}_${++this.nav}`;
+        this.update();
         return true;
     }
-    prev(e) {
+    prevClick() {
+        location.href = `#${this.id}${--this.nav > 0 ? "_" + this.nav : ""}`;
+        this.update();
         return true;
     }
 }
