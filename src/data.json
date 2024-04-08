@@ -42,21 +42,26 @@
             "github": [
                 {
                     "link": "https://github.com/bsuscbsit",
-                    "badge": "https://img.shields.io/badge/bsuscbsit-202020?style=for-the-badge&logo=github&logoColor=white"
+                    "badge": "https://img.shields.io/badge/bsuscbsit-202020?style=for-the-badge&logo=github&logoColor=white",
+                    "stats": "s001"
                 },
                 {
                     "link": "https://github.com/xxlllllllxx",
-                    "badge": "https://img.shields.io/badge/xxlllllllxx-202020?style=for-the-badge&logo=github&logoColor=white"
+                    "badge": "https://img.shields.io/badge/xxlllllllxx-202020?style=for-the-badge&logo=github&logoColor=white",
+                    "stats": "s002"
                 },
                 {
                     "link": "https://github.com/lewisdaverielmasallo",
-                    "badge": "https://img.shields.io/badge/lewisdaverielmasallo-202020?style=for-the-badge&logo=github&logoColor=white"
+                    "badge": "https://img.shields.io/badge/lewisdaverielmasallo-202020?style=for-the-badge&logo=github&logoColor=white",
+                    "stats": "s003"
                 }
             ]
         }
     },
     "statistics": [
         {
+            "id": "s001",
+            "index": "0",
             "title": "BsuscBsit",
             "name": "Bot Squad",
             "start": "May 21, 2023",
@@ -67,6 +72,8 @@
             "graph": "https: //github-readme-activity-graph.vercel.app/graph?username=bsuscbsit&theme=transparent"
         },
         {
+            "id": "s002",
+            "index": "1",
             "title": "xxlllllllxx",
             "name": "Masallo Lee",
             "start": "July 10, 2021",
@@ -77,6 +84,8 @@
             "graph": "https://github-readme-activity-graph.vercel.app/graph?username=xxlllllllxx&theme=transparent"
         },
         {
+            "id": "s003",
+            "index": "2",
             "title": "lewisdaverielmasallo",
             "name": "lewisdaverielmasallo",
             "start": "February 28, 2024",
@@ -89,6 +98,7 @@
     ],
     "projects": [
         {
+            "id": "p001",
             "title": "Desktop Application: ",
             "project": "SPTC Application",
             "link": "https://github.com/BsuscBsit/SPTC-APP",
@@ -129,9 +139,11 @@
                     "name": "Signature Pad",
                     "badge": "https://img.shields.io/badge/Signature_Pad-103030?style=for-the-badge&logo=powerpages"
                 }
-            ]
+            ],
+            "screenshots": []
         },
         {
+            "id": "p002",
             "title": "Embedded System: ",
             "project": "Arduino-AutoScale",
             "link_badge": "https://img.shields.io/badge/GitHub_autoscale-100000?style=for-the-badge&logo=github",
@@ -172,14 +184,16 @@
                     "name": "Main",
                     "link": "./src/screenshot/autoscale/main.png"
                 },
-                {
-                    "name": "Calibration with weight",
-                    "link": "./src/screenshot/autoscale/wow.png"
-                },
-                {
-                    "name": "Calibration without weight",
-                    "link": "./src/screenshot/autoscale/ww.png"
-                },
+                [
+                    {
+                        "name": "Calibration with weight",
+                        "link": "./src/screenshot/autoscale/wow.png"
+                    },
+                    {
+                        "name": "Calibration without weight",
+                        "link": "./src/screenshot/autoscale/ww.png"
+                    }
+                ],
                 {
                     "name": "Graph",
                     "link": "./src/screenshot/autoscale/graph.png"
@@ -187,6 +201,7 @@
             ]
         },
         {
+            "id": "p003",
             "title": "Embedded System: ",
             "project": "Arduino-AutoTrash",
             "link_badge": "https://img.shields.io/badge/GitHub_autotrash-100000?style=for-the-badge&logo=github",
@@ -232,6 +247,7 @@
             ]
         },
         {
+            "id": "p004",
             "title": "Mobile Application: ",
             "project": "Affordawash App",
             "link_badge": "https://img.shields.io/badge/GitHub_affordawash_application-100000?style=for-the-badge&logo=github",
@@ -259,6 +275,7 @@
             ]
         },
         {
+            "id": "p005",
             "title": "Web Application: ",
             "project": "Affordawash Web",
             "link_badge": "https://img.shields.io/badge/GitHub_affordawash_website-100000?style=for-the-badge&logo=github",
@@ -294,6 +311,7 @@
             ]
         },
         {
+            "id": "p006",
             "title": "Flutter Application: ",
             "project": "WorkSched",
             "link_badge": "https://img.shields.io/badge/Flutter_Worksched-02569B?style=for-the-badge&logo=flutter",
@@ -331,6 +349,7 @@
             ]
         },
         {
+            "id": "p007",
             "title": "Web Application: ",
             "project": "Luminaire Lane",
             "link_badge": "https://img.shields.io/badge/GitHub_luminaire_lane-100000?style=for-the-badge&logo=github",
@@ -366,6 +385,7 @@
             ]
         },
         {
+            "id": "p008",
             "title": "Python Projects",
             "link_badge": "https://img.shields.io/badge/GitHub_Python_files-100000?style=for-the-badge&logo=github",
             "link": "https://github.com/xxlllllllxx/Python-Files",
@@ -385,6 +405,7 @@
             ]
         },
         {
+            "id": "p009",
             "title": "Game Maker Studio: ",
             "project": "Mobile and Windows Game",
             "link_badge": "https://img.shields.io/badge/Github_mobigame_activity-100000?style=for-the-badge&logo=github",

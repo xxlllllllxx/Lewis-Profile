@@ -68,10 +68,179 @@ function showSnackbar(title, duration) {
 
 }
 
+function loadProfile(profileData) {
+    const profileContainer = document.createElement('div');
+
+    const profileHeading = document.createElement('h2');
+    profileHeading.textContent = 'Profile';
+    profileContainer.appendChild(profileHeading);
+
+    const profileInfo = document.createElement('div');
+    profileInfo.classList.add('profile-info');
+
+    const nameElement = document.createElement('p');
+    nameElement.innerHTML = `<b>Name:</b> <span class="click">${profileData.name}</span>`;
+    profileInfo.appendChild(nameElement);
+
+    const courseElement = document.createElement('p');
+    courseElement.innerHTML = `<b>Course:</b> <span class="click">${profileData.course}</span>`;
+    profileInfo.appendChild(courseElement);
+
+    const learnedLanguagesHeading = document.createElement('h3');
+    learnedLanguagesHeading.textContent = 'Learned Languages:';
+    profileInfo.appendChild(learnedLanguagesHeading);
+
+    const learnedLanguagesList = document.createElement('ul');
+    profileData.learned_languages.forEach(language => {
+        const languageItem = document.createElement('li');
+        languageItem.textContent = language;
+        learnedLanguagesList.appendChild(languageItem);
+    });
+    profileInfo.appendChild(learnedLanguagesList);
+
+    const platformsHeading = document.createElement('h3');
+    platformsHeading.textContent = 'Platforms:';
+    profileInfo.appendChild(platformsHeading);
+
+    const platformsList = document.createElement('ul');
+    profileData.platforms.forEach(platform => {
+        const platformItem = document.createElement('li');
+        platformItem.textContent = platform;
+        platformsList.appendChild(platformItem);
+    });
+    profileInfo.appendChild(platformsList);
+
+    const socialsHeading = document.createElement('h3');
+    socialsHeading.textContent = 'Socials:';
+    profileInfo.appendChild(socialsHeading);
+
+    const socialsContainer = document.createElement('div');
+    socialsContainer.classList.add('socials');
+
+    for (const platform in profileData.socials) {
+        if (Array.isArray(profileData.socials[platform])) {
+            profileData.socials[platform].forEach(profile => {
+                const linkElement = document.createElement('a');
+                linkElement.href = profile.link;
+                linkElement.target = '_blank';
+                const image = document.createElement('img');
+                image.classList.add('shield');
+                image.src = profile.badge;
+                linkElement.appendChild(image);
+                socialsContainer.appendChild(document.createElement('br'));
+                const statsLink = document.createElement('a');
+                statsLink.href = `#${profile.stats}`;
+                statsLink.textContent = profile.stats;
+
+                socialsContainer.appendChild(linkElement);
+                socialsContainer.appendChild(statsLink);
+            });
+        } else {
+            const linkElement = document.createElement('a');
+            linkElement.href = profileData.socials[platform].link;
+            linkElement.target = '_blank';
+            const image = document.createElement('img');
+            image.classList.add('shield');
+            image.src = profileData.socials[platform].badge;
+            linkElement.appendChild(image);
+            socialsContainer.appendChild(linkElement);
+        }
+    }
+
+    profileInfo.appendChild(socialsContainer);
+    profileContainer.appendChild(profileInfo);
+
+    return profileContainer;
+}
+
+function createStatsElement(statsData) {
+    const statistics = document.createElement('div');
+
+    const linker = document.createElement('div');
+    linker.id = statsData.id;
+    linker.style.top = "-69px";
+    linker.style.position = "absolute";
+    linker.style.width = "950px";
+    linker.style.height = "1px";
+    linker.style.backgroundColor = "red";
+    linker.style.marginLeft = "20px"
+    statistics.appendChild(linker);
+
+    const statsContainer = document.createElement('div');
+    statsContainer.style.width = "890px";
+    statsContainer.style.marginLeft = "10px";
+    statsContainer.style.marginRight = "10px";
+    statsContainer.style.height = "400px";
+    statsContainer.classList.add('stats');
+    statsContainer.classList.add('snapper');
+    statsContainer.addEventListener('click', (e) => { location.href = `#${statsData.id}` });
+    statistics.appendChild(statsContainer);
+
+    const cardholder = document.createElement('div');
+    cardholder.classList.add('info-card');
+    statsContainer.appendChild(cardholder);
+
+    const card = document.createElement(`div`);
+    const title = document.createElement(`h3`);
+    title.textContent = statsData.title;
+    title.classList.add('click');
+    title.style.marginBottom = "50px"
+    card.appendChild(title);
+    const name = document.createElement(`h5`);
+    name.textContent = "Name: " + statsData.name;
+    card.appendChild(name);
+    const start = document.createElement(`h5`);
+    start.textContent = "Start Date: " + statsData.start;
+    card.appendChild(start);
+    const toprepoHolder = document.createElement('div');
+    toprepoHolder.classList.add('toprepo-holder');
+    const toprepo = document.createElement(`p`);
+    toprepo.style.fontSize = '0.83em';
+    toprepo.style.fontWeight = "bold";
+    toprepo.textContent = "Top Repository: ";
+    toprepoHolder.appendChild(toprepo);
+    const a = document.createElement('a');
+    a.target = '_blank';
+    a.href = statsData.toprepo_link;
+    const image = document.createElement('img');
+    image.style.width = "auto";
+    image.classList.add('shield');
+    image.src = statsData.toprepo;
+    a.appendChild(image);
+    toprepoHolder.appendChild(a);
+    card.appendChild(toprepoHolder);
+    cardholder.appendChild(card);
+
+    const stat = document.createElement('img');
+    stat.src = statsData.stats;
+    stat.style.width = '100%';
+    cardholder.appendChild(stat);
+
+    const toplang = document.createElement('img');
+    toplang.src = statsData.toplang;
+    statsContainer.appendChild(toplang);
+
+
+
+    return statistics;
+}
+
 function createProjectElement(projectData) {
+    const project = document.createElement('div');
+    project.classList.add('project_scroll');
+
     const projectContainer = document.createElement('div');
     projectContainer.classList.add('project');
-    projectContainer.classList.add('snapper');
+    project.appendChild(projectContainer);
+
+    const linker = document.createElement('div');
+    linker.id = projectData.id;
+    linker.style.position = 'absolute';
+    linker.style.top = "-37px";
+    projectContainer.appendChild(linker);
+    projectContainer.addEventListener('click', (e) => {
+        location.href = `#${projectData.id}`;
+    });
 
     const titleElement = document.createElement('h3');
     titleElement.innerHTML = `${projectData.title} ${projectData.project ? "<span class='click'>" + projectData.project + "</span>" : ""}`;
@@ -200,154 +369,56 @@ function createProjectElement(projectData) {
     }
 
     if (projectData.screenshots) {
-        const screnshotHolder = document.createElement('div');
-        projectData.screenshots.forEach((data) => {
-            const image = document.createElement("img");
-            image.style.maxWidth = "100%";
-            image.alt = data.name;
-            image.src = data.link;
-            screnshotHolder.appendChild(image);
+        const navigator = document.createElement('div');
+        const nav = 1;
+        navigator.id = "navigator";
+
+        const prev = document.createElement('img');
+        prev.src = './src/image/left.png';
+        prev.style.cursor = 'pointer';
+        prev.addEventListener('click', (e) => {
+
         });
-    }
-
-
-    return projectContainer;
-}
-
-function loadProfile(profileData) {
-    const profileContainer = document.createElement('div');
-
-    const profileHeading = document.createElement('h2');
-    profileHeading.textContent = 'Profile';
-    profileContainer.appendChild(profileHeading);
-
-    const profileInfo = document.createElement('div');
-    profileInfo.classList.add('profile-info');
-
-    const nameElement = document.createElement('p');
-    nameElement.innerHTML = `<b>Name:</b> <span class="click">${profileData.name}</span>`;
-    profileInfo.appendChild(nameElement);
-
-    const courseElement = document.createElement('p');
-    courseElement.innerHTML = `<b>Course:</b> <span class="click">${profileData.course}</span>`;
-    profileInfo.appendChild(courseElement);
-
-    const learnedLanguagesHeading = document.createElement('h3');
-    learnedLanguagesHeading.textContent = 'Learned Languages:';
-    profileInfo.appendChild(learnedLanguagesHeading);
-
-    const learnedLanguagesList = document.createElement('ul');
-    profileData.learned_languages.forEach(language => {
-        const languageItem = document.createElement('li');
-        languageItem.textContent = language;
-        learnedLanguagesList.appendChild(languageItem);
-    });
-    profileInfo.appendChild(learnedLanguagesList);
-
-    const platformsHeading = document.createElement('h3');
-    platformsHeading.textContent = 'Platforms:';
-    profileInfo.appendChild(platformsHeading);
-
-    const platformsList = document.createElement('ul');
-    profileData.platforms.forEach(platform => {
-        const platformItem = document.createElement('li');
-        platformItem.textContent = platform;
-        platformsList.appendChild(platformItem);
-    });
-    profileInfo.appendChild(platformsList);
-
-    const socialsHeading = document.createElement('h3');
-    socialsHeading.textContent = 'Socials:';
-    profileInfo.appendChild(socialsHeading);
-
-    const socialsContainer = document.createElement('div');
-    socialsContainer.classList.add('socials');
-
-    for (const platform in profileData.socials) {
-        if (Array.isArray(profileData.socials[platform])) {
-            profileData.socials[platform].forEach(profile => {
-                const linkElement = document.createElement('a');
-                linkElement.href = profile.link;
-                linkElement.target = '_blank';
-                const image = document.createElement('img');
-                image.classList.add('shield');
-                image.src = profile.badge;
-                linkElement.appendChild(image);
-                socialsContainer.appendChild(document.createElement('br'));
-                socialsContainer.appendChild(linkElement);
-            });
+        navigator.appendChild(prev);
+        if (nav <= 1) {
+            prev.style.visibility = "hidden";
         } else {
-            const linkElement = document.createElement('a');
-            linkElement.href = profileData.socials[platform].link;
-            linkElement.target = '_blank';
-            const image = document.createElement('img');
-            image.classList.add('shield');
-            image.src = profileData.socials[platform].badge;
-            linkElement.appendChild(image);
-            socialsContainer.appendChild(linkElement);
+            prev.style.visibility = "visible";
         }
+        const num = document.createElement('h3');
+        num.textContent = nav;
+        navigator.appendChild(num);
+        const next = document.createElement('img');
+        next.src = './src/image/right.png';
+        next.style.cursor = 'pointer';
+        next.addEventListener('click', (e) => {
+            console.log("NEXT");
+        });
+        navigator.appendChild(next);
+        project.appendChild(navigator);
+        projectData.screenshots.forEach((data) => {
+            const display = document.createElement('div');
+            display.style.height = "100%";
+            if (Array.isArray(data)) {
+                console.log("ARRAY: " + data);
+            } else {
+
+                console.log("MAP" + data);
+                const image = document.createElement("img");
+                image.alt = data.name;
+                image.src = data.link;
+                display.appendChild(image);
+            }
+
+            project.appendChild(display);
+        });
+
+
+
+
     }
 
-    profileInfo.appendChild(socialsContainer);
-    profileContainer.appendChild(profileInfo);
 
-    return profileContainer;
+    return project;
 }
-
-function createStatsElement(statsData) {
-    const projectContainer = document.createElement('div');
-    projectContainer.style.width = "100%";
-    projectContainer.style.height = "400px";
-    projectContainer.classList.add('stats');
-    projectContainer.classList.add('snapper');
-
-    const cardholder = document.createElement('div');
-    cardholder.classList.add('info-card');
-    projectContainer.appendChild(cardholder);
-
-    const card = document.createElement(`div`);
-    const title = document.createElement(`h3`);
-    title.textContent = statsData.title;
-    title.classList.add('click');
-    title.style.marginBottom = "50px"
-    card.appendChild(title);
-    const name = document.createElement(`h5`);
-    name.textContent = "Name: " + statsData.name;
-    card.appendChild(name);
-    const start = document.createElement(`h5`);
-    start.textContent = "Start Date: " + statsData.start;
-    card.appendChild(start);
-    const toprepoHolder = document.createElement('div');
-    toprepoHolder.classList.add('toprepo-holder');
-    const toprepo = document.createElement(`p`);
-    toprepo.style.fontSize = '0.83em';
-    toprepo.style.fontWeight = "bold";
-    toprepo.textContent = "Top Repository: ";
-    toprepoHolder.appendChild(toprepo);
-    const a = document.createElement('a');
-    a.target = '_blank';
-    a.href = statsData.toprepo_link;
-    const image = document.createElement('img');
-    image.style.width = "auto";
-    image.classList.add('shield');
-    image.src = statsData.toprepo;
-    a.appendChild(image);
-    toprepoHolder.appendChild(a);
-    card.appendChild(toprepoHolder);
-    cardholder.appendChild(card);
-
-    const stat = document.createElement('img');
-    stat.src = statsData.stats;
-    stat.style.width = '100%';
-    cardholder.appendChild(stat);
-
-    const toplang = document.createElement('img');
-    toplang.src = statsData.toplang;
-    projectContainer.appendChild(toplang);
-
-
-
-    return projectContainer;
-}
-
 
