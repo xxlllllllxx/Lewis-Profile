@@ -443,11 +443,11 @@ class Navigation {
         }
     }
 
-    // next(e) {
-    //     return true;
-    // }
-    // prev(e) {
-    //     return true;
-    // }
+    next(e) {
+        return true;
+    }
+    prev(e) {
+        return true;
+    }
 }
 
