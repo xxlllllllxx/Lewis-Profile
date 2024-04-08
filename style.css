@@ -355,5 +355,5 @@ img {
 }
 
 .nav {
-    overflow-x: scroll;
+    overflow: hidden;
 }

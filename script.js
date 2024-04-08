@@ -368,7 +368,7 @@ function createProjectElement(projectData) {
 
     if (projectData.screenshots && (projectData.screenshots.length > 0)) {
         project.classList.add('nav');
-        project.classList.add('scroll_x');
+        project.classList.add('scroll');
         const navigator = document.createElement('div');
         const nav = 1;
         navigator.id = "navigator";
