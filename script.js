@@ -231,6 +231,7 @@ function createProjectElement(projectData) {
     const projectContainer = document.createElement('div');
     projectContainer.classList.add('snapper');
     projectContainer.classList.add('project');
+    projectContainer.id = projectData.id + "_0";
     project.appendChild(projectContainer);
 
     const linker = document.createElement('div');
@@ -369,34 +370,11 @@ function createProjectElement(projectData) {
     if (projectData.screenshots && (projectData.screenshots.length > 0)) {
         project.classList.add('nav');
         project.classList.add('scroll');
-        const navigator = document.createElement('div');
-        const nav = 1;
-        navigator.id = "navigator";
-        const prev = document.createElement('img');
-        prev.src = './src/image/left.png';
-        prev.style.cursor = 'pointer';
-        prev.addEventListener('click', (e) => {
-
-        });
-        navigator.appendChild(prev);
-        if (nav <= 1) {
-            prev.style.visibility = "hidden";
-        } else {
-            prev.style.visibility = "visible";
-        }
-        const num = document.createElement('h3');
-        num.textContent = nav;
-        navigator.appendChild(num);
-        const next = document.createElement('img');
-        next.src = './src/image/right.png';
-        next.style.cursor = 'pointer';
-        next.addEventListener('click', (e) => {
-            console.log("NEXT");
-        });
-        navigator.appendChild(next);
-        project.appendChild(navigator);
-        projectData.screenshots.forEach((data) => {
+        const navigation = new Navigation(`#${projectData.id}_`, projectData.screenshots.length);
+        project.appendChild(navigation.get());
+        projectData.screenshots.forEach((data, ind) => {
             const display = document.createElement('div');
+            display.id = projectData.id + "_" + ind + 1;
             display.classList.add('snapper');
             display.style.maxWidth = "980px";
             display.style.minWidth = "980px";
@@ -419,5 +397,57 @@ function createProjectElement(projectData) {
 
 
     return project;
+}
+
+class Navigation {
+    constructor(id, count) {
+        this.id = id;
+        this.count = count;
+        this.navigator = document.createElement('div');
+        this.nav = 1;
+        this.navigator.classList.add("navigator");
+        this.prev = document.createElement('img');
+        this.prev.src = './src/image/left.png';
+        this.prev.style.cursor = 'pointer';
+        this.prev.addEventListener('click', (e) => {
+            prev();
+        });
+        this.navigator.appendChild(this.prev);
+        const num = document.createElement('h3');
+        num.textContent = this.nav;
+        this.navigator.appendChild(num);
+        this.next = document.createElement('img');
+        this.next.src = './src/image/right.png';
+        this.next.style.cursor = 'pointer';
+        this.next.addEventListener('click', (e) => {
+            next();
+        });
+        this.navigator.appendChild(this.next);
+        console.log(this.navigator);
+        this.update();
+    }
+    get() {
+        return this.navigator;
+    }
+
+    update() {
+        if (this.nav <= 1) {
+            this.prev.style.visibility = "hidden";
+        } else {
+            this.prev.style.visibility = "visible";
+        }
+        if (this.nav >= this.count) {
+            this.next.style.visibility = "hidden";
+        } else {
+            this.next.style.visibility = "visible";
+        }
+    }
+
+    // next(e) {
+    //     return true;
+    // }
+    // prev(e) {
+    //     return true;
+    // }
 }
 

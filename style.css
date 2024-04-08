@@ -333,7 +333,7 @@ img {
     margin-left: 10px;
 }
 
-#navigator {
+.navigator {
     height: 48px;
     width: 180px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -347,11 +347,15 @@ img {
     gap: 10px;
 }
 
-#navigator img {
+.navigator img {
     height: 32px;
     width: 32px;
     border-radius: 50%;
     background-color: #101010;
+}
+
+.navigator img:hover {
+    background-color: #007bff;
 }
 
 .nav {
