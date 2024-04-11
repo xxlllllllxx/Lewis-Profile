@@ -332,7 +332,24 @@
                     "badge": "https://img.shields.io/badge/JavaScript-103030?style=for-the-badge&logo=javascript"
                 }
             ],
-            "screenshots": []
+            "screenshots": [
+                {
+                    "name": "Dashboard",
+                    "link": "./src/screenshot/aff-web/dashboard.png"
+                },
+                {
+                    "name": "Add Employees",
+                    "link": "./src/screenshot/aff-web/addemployee.png"
+                },
+                {
+                    "name": "Add Items",
+                    "link": "./src/screenshot/aff-web/additem.png"
+                },
+                {
+                    "name": "Add Sevices",
+                    "link": "./src/screenshot/aff-web/addservice.png"
+                }
+            ]
         },
         {
             "id": "p006",
