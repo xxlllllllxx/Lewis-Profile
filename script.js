@@ -383,34 +383,53 @@ function createProjectElement(projectData) {
             const linker2 = document.createElement('div');
             linker2.id = `${projectData.id}_${ind + 1}`;
             linker2.style.position = 'absolute';
-            linker2.style.top = "-37px";
+            linker2.style.left = "37px";
             linker2.style.top = "-47px";
             linker2.style.width = "975px";
-            linker2.style.height = "10px";
-            linker2.style.backgroundColor = "red";
+            linker2.style.height = "1px";
             linker2.style.marginLeft = "-20px"
             display.addEventListener('click', (e) => { location.href = `#${projectData.id}_${ind + 1}` });
             display.appendChild(linker2);
 
-
             display.classList.add('snapper');
             display.style.maxWidth = "980px";
+            display.style.width = "980px";
             display.style.minWidth = "980px";
+            display.style.overflow = "clip";
             display.style.justifyContent = "center";
             if (Array.isArray(data)) {
                 const cont = document.createElement('div');
                 cont.style.display = 'flex';
-                cont.style.flexDirection = 'row';
-                data.forEach(datum => {
-                    const image = document.createElement("img");
-                    image.alt = datum.name;
-                    image.src = datum.link;
-                    cont.append(image);
+                cont.style.gap = '10px';
+                cont.style.flexWrap = "wrap";
+                cont.style.justifyContent = "center";
+                cont.style.alignItems = "center";
+                cont.style.height = `100%`;
+                // cont.style.
+                let height = 0;
+                data.forEach((datum, i) => {
+                    if (i < 2) {
+                        const image = document.createElement("img");
+                        image.style.flexShrink = "1";
+                        image.alt = datum.name;
+                        image.src = datum.link;
+
+                        height += image.height;
+                        cont.append(image);
+                    }
                 });
                 display.appendChild(cont);
             } else {
                 const image = document.createElement("img");
+                image.style.position = "absolute";
+                image.style.top = 0;
+                image.style.left = 0;
+                image.style.right = 0;
+                image.style.bottom = 0;
+                image.style.width = "100%";
                 image.style.height = "100%";
+                image.style.margin = "auto";
+                image.style.objectFit = 'scale-down';
                 image.alt = data.name;
                 image.src = data.link;
                 display.appendChild(image);

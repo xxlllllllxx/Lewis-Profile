@@ -140,26 +140,7 @@
                     "badge": "https://img.shields.io/badge/Signature_Pad-103030?style=for-the-badge&logo=powerpages"
                 }
             ],
-            "screenshots": [
-                {
-                    "name": "Main",
-                    "link": "./src/screenshot/autoscale/main.png"
-                },
-                [
-                    {
-                        "name": "Calibration with weight",
-                        "link": "./src/screenshot/autoscale/wow.png"
-                    },
-                    {
-                        "name": "Calibration without weight",
-                        "link": "./src/screenshot/autoscale/ww.png"
-                    }
-                ],
-                {
-                    "name": "Graph",
-                    "link": "./src/screenshot/autoscale/graph.png"
-                }
-            ]
+            "screenshots": []
         },
         {
             "id": "p002",
@@ -202,6 +183,10 @@
                 {
                     "name": "Main",
                     "link": "./src/screenshot/autoscale/main.png"
+                },
+                {
+                    "name": "Diagram",
+                    "link": "./src/screenshot/autoscale/diagram.png"
                 },
                 [
                     {
@@ -261,9 +246,10 @@
                 },
                 {
                     "name": "Capacitive Sensor",
-                    "badge": "https://img.shields.io/badge/Capacitive_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=blue"
+                    "badge": "https://img.shields.io/badge/Capacitive_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=orange"
                 }
-            ]
+            ],
+            "screenshots": []
         },
         {
             "id": "p004",
@@ -291,7 +277,8 @@
                     "name": "SQLite Database",
                     "badge": "https://img.shields.io/badge/SQLite-00000f?style=for-the-badge&logo=sqlite"
                 }
-            ]
+            ],
+            "screenshots": []
         },
         {
             "id": "p005",
@@ -327,7 +314,8 @@
                     "name": "JavaScript",
                     "badge": "https://img.shields.io/badge/JavaScript-103030?style=for-the-badge&logo=javascript"
                 }
-            ]
+            ],
+            "screenshots": []
         },
         {
             "id": "p006",
@@ -365,7 +353,8 @@
                     "name": "Sourcetree",
                     "badge": "https://img.shields.io/badge/Sourcetree-0052CC?style=for-the-badge&logo=sourcetree"
                 }
-            ]
+            ],
+            "screenshots": []
         },
         {
             "id": "p007",
@@ -401,7 +390,8 @@
                     "name": "PayPal API Integration",
                     "badge": "https://img.shields.io/badge/PayPal_API-00457C?style=for-the-badge&logo=paypal"
                 }
-            ]
+            ],
+            "screenshots": []
         },
         {
             "id": "p008",
@@ -421,7 +411,8 @@
                 "Artificial Intelligence API",
                 "Pytube Library",
                 "Quantum software development kit"
-            ]
+            ],
+            "screenshots": []
         },
         {
             "id": "p009",
@@ -456,7 +447,8 @@
                     "name": "Game Maker Studio",
                     "badge": "https://img.shields.io/badge/Game_Maker_studio-000000?style=for-the-badge&logo=gamemaker"
                 }
-            ]
+            ],
+            "screenshots": []
         }
     ]
 }
