@@ -140,7 +140,24 @@
                     "badge": "https://img.shields.io/badge/Signature_Pad-103030?style=for-the-badge&logo=powerpages"
                 }
             ],
-            "screenshots": []
+            "screenshots": [
+                {
+                    "name": "Front Page",
+                    "link": "./src/screenshot/sptc-app/frontpage.png"
+                },
+                {
+                    "name": "Dashboard",
+                    "link": "./src/screenshot/sptc-app/dashboard.png"
+                },
+                {
+                    "name": "Franchise List",
+                    "link": "./src/screenshot/sptc-app/franchiselist.png"
+                },
+                {
+                    "name": "Franchise Information",
+                    "link": "./src/screenshot/sptc-app/franchiseinfo.png"
+                }
+            ]
         },
         {
             "id": "p002",

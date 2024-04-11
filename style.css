@@ -36,6 +36,21 @@ body {
     padding-top: 20px !important;
 }
 
+.inner-title {
+    position: absolute;
+    top: 10;
+    left: 0;
+    padding: 15px 25px;
+    /* border: 1px solid white; */
+    border-radius: 12px;
+    min-width: 200px;
+    background-color: rgba(10, 10, 10, 0.8);
+    background-color: rgba(10, 10, 20, 0.6);
+    border-radius: 12px;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 1), inset -2px 2px 2px rgba(128, 128, 128, 0.5);
+    color: #fff;
+}
+
 header {
     background-color: #101010;
     padding: 5px;
@@ -334,14 +349,17 @@ img {
 }
 
 .navigator {
+    position: absolute;
+    border-radius: 12px;
+    display: none;
+}
+
+.bottomnav {
     height: 48px;
     width: 180px;
     background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    border-radius: 12px;
     bottom: 20px;
     right: 50px;
-    display: none;
     justify-content: center;
     align-items: center;
     gap: 10px;

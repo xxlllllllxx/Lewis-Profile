@@ -396,6 +396,7 @@ function createProjectElement(projectData) {
             display.style.minWidth = "980px";
             display.style.overflow = "clip";
             display.style.justifyContent = "center";
+
             if (Array.isArray(data)) {
                 const cont = document.createElement('div');
                 cont.style.display = 'flex';
@@ -415,9 +416,13 @@ function createProjectElement(projectData) {
 
                         height += image.height;
                         cont.append(image);
+
+                        const title = document.createElement("h2");
+                        title.textContent = data.name;
                     }
                 });
                 display.appendChild(cont);
+
             } else {
                 const image = document.createElement("img");
                 image.style.position = "absolute";
@@ -433,6 +438,12 @@ function createProjectElement(projectData) {
                 image.alt = data.name;
                 image.src = data.link;
                 display.appendChild(image);
+
+                const title = document.createElement("h3");
+                title.textContent = data.name;
+                title.classList.add("inner-title");
+                title.classList.add("navigator");
+                display.appendChild(title);
             }
 
             project.appendChild(display);
@@ -451,6 +462,8 @@ class Navigation {
         this.navigator = document.createElement('div');
         this.nav = 0;
         this.navigator.classList.add("navigator");
+        this.navigator.classList.add("bottomnav");
+
         this.prev = document.createElement('img');
         this.prev.src = './src/image/left.png';
         this.prev.style.cursor = 'pointer';
