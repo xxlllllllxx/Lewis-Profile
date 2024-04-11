@@ -74,7 +74,7 @@ header {
 }
 
 .shield {
-    /* height: 32px; */
+    height: 28px;
     transition: transform 0.2s ease;
 }
 
@@ -86,8 +86,6 @@ header {
 section {
     padding: 20px;
 }
-
-
 
 b {
     font-weight: 900;
@@ -207,7 +205,6 @@ img {
 #statsbox {
     display: flex;
     flex-direction: row;
-    width: 305%;
     position: relative;
     /* transform: rotateX(180deg); TOP SCROLLBAR CHEAT from praveenpuglia*/
 }

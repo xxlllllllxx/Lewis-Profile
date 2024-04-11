@@ -129,8 +129,7 @@ function loadProfile(profileData) {
                 socialsContainer.appendChild(document.createElement('br'));
                 const statsLink = document.createElement('a');
                 statsLink.href = `#${profile.stats}`;
-                statsLink.textContent = profile.stats;
-
+                statsLink.innerHTML = "<img src='./src/image/right.png' class='shield'/>";
                 socialsContainer.appendChild(linkElement);
                 socialsContainer.appendChild(statsLink);
             });
@@ -426,9 +425,10 @@ function createProjectElement(projectData) {
                 image.style.left = 0;
                 image.style.right = 0;
                 image.style.bottom = 0;
-                image.style.width = "100%";
-                image.style.height = "100%";
+                image.style.width = "95%";
+                image.style.height = "95%";
                 image.style.margin = "auto";
+                image.style.border = 0;
                 image.style.objectFit = 'scale-down';
                 image.alt = data.name;
                 image.src = data.link;
