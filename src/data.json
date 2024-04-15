@@ -254,16 +254,16 @@
                     "badge": "https://img.shields.io/badge/Ultrasonic_Sensor-6A6B6E?style=for-the-badge&logo=arduino"
                 },
                 {
-                    "name": "Moisture Sensor",
-                    "badge": "https://img.shields.io/badge/Moisture_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=green"
-                },
-                {
                     "name": "Inductive Sensor",
-                    "badge": "https://img.shields.io/badge/Inductive_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=blue"
+                    "badge": "https://img.shields.io/badge/Inductive_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=black"
                 },
                 {
                     "name": "Capacitive Sensor",
                     "badge": "https://img.shields.io/badge/Capacitive_Sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=orange"
+                },
+                {
+                    "name": "Polarity Reversal Motor Relay",
+                    "badge": "https://img.shields.io/badge/motor_polarity_reversal_using_2_relay-6A6B6E?style=for-the-badge&logo=arduino&logoColor=blue"
                 }
             ],
             "screenshots": []
