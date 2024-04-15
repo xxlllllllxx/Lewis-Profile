@@ -165,8 +165,9 @@
     - ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
     - ![Infrared](https://img.shields.io/badge/infrared_sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=red)
     - ![Ultrasonic](https://img.shields.io/badge/ultrasonic_sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=white)
-    - ![moisture](https://img.shields.io/badge/moisture_sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=green)
-    - ![Inductive](https://img.shields.io/badge/inductive_sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=blue)
+    - ![capacitive](https://img.shields.io/badge/capacitive_sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=blue)
+    - ![Inductive](https://img.shields.io/badge/inductive_sensor-6A6B6E?style=for-the-badge&logo=arduino&logoColor=black)
+    - ![Motor](https://img.shields.io/badge/motor_relay_polarity_reversal-6A6B6E?style=for-the-badge&logo=arduino&logoColor=black)
   - Timeline:
 
 ### Python Projects
