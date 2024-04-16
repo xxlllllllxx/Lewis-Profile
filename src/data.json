@@ -69,7 +69,8 @@
             "toprepo_link": "https://github.com/BsuscBsit/SPTC-APP",
             "stats": "https://github-readme-stats.vercel.app/api?username=bsuscbsit&theme=transparent&show_icons=true",
             "toplang": "https://github-readme-stats.vercel.app/api/top-langs/?username=bsuscbsit&theme=transparent",
-            "graph": "https: //github-readme-activity-graph.vercel.app/graph?username=bsuscbsit&theme=transparent"
+            "graph": "https://img.shields.io/badge/activity_graph-100000?style=for-the-badge&logo=nano",
+            "graph_link": "https://github-readme-activity-graph.vercel.app/graph?username=bsuscbsit&theme=react-dark"
         },
         {
             "id": "s002",
@@ -81,7 +82,8 @@
             "toprepo_link": "https://github.com/xxlllllllxx/Arduino-AutoScale",
             "stats": "https://github-readme-stats.vercel.app/api?username=xxlllllllxx&theme=transparent&show_icons=true",
             "toplang": "https://github-readme-stats.vercel.app/api/top-langs/?username=xxlllllllxx&theme=transparent",
-            "graph": "https://github-readme-activity-graph.vercel.app/graph?username=xxlllllllxx&theme=transparent"
+            "graph": "https://img.shields.io/badge/activity_graph-100000?style=for-the-badge&logo=nano",
+            "graph_link": "https://github-readme-activity-graph.vercel.app/graph?username=xxlllllllxx&theme=react-dark"
         },
         {
             "id": "s003",
@@ -93,7 +95,8 @@
             "toprepo_link": "https://github.com/lewisdaverielmasallo/worksched_dashboard",
             "stats": "https://github-readme-stats.vercel.app/api?username=lewisdaverielmasallo&theme=transparent&show_icons=true",
             "toplang": "https://github-readme-stats.vercel.app/api/top-langs/?username=lewisdaverielmasallo&theme=transparent",
-            "graph": "https://github-readme-activity-graph.vercel.app/graph?username=lewisdaverielmasallo&theme=transparent"
+            "graph": "https://img.shields.io/badge/activity_graph-02569B?style=for-the-badge&logo=nano&logoColor=white",
+            "graph_link": "https://github-readme-activity-graph.vercel.app/graph?username=lewisdaverielmasallo&theme=react-dark"
         }
     ],
     "projects": [

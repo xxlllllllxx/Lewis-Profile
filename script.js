@@ -171,7 +171,19 @@ function createStatsElement(statsData) {
     statsContainer.style.height = "400px";
     statsContainer.classList.add('stats');
     statsContainer.classList.add('snapper');
-    statsContainer.addEventListener('click', (e) => { location.href = `#${statsData.id}` });
+    statsContainer.addEventListener('click', (e) => {
+        const pad = `&${Math.random(0, 100)}`;
+        location.href = `#${statsData.id}`;
+        let div = document.querySelector(`#${statsData.id}`);
+        div = div.parentNode;
+        div = div.childNodes[1];
+        let image1 = div.childNodes[0];
+        image1 = image1.childNodes[1];
+        image1.src = image1.src + pad;
+        image2 = div.childNodes[1];
+        console.log(image2.src)
+        image2.src = image2.src + pad;
+    });
     statistics.appendChild(statsContainer);
 
     const cardholder = document.createElement('div');
@@ -182,7 +194,7 @@ function createStatsElement(statsData) {
     const title = document.createElement(`h3`);
     title.textContent = statsData.title;
     title.classList.add('click');
-    title.style.marginBottom = "50px"
+    title.style.marginBottom = "20px"
     card.appendChild(title);
     const name = document.createElement(`h5`);
     name.textContent = "Name: " + statsData.name;
@@ -206,7 +218,60 @@ function createStatsElement(statsData) {
     image.src = statsData.toprepo;
     a.appendChild(image);
     toprepoHolder.appendChild(a);
+
+
+    const graphHolder = document.createElement('div');
+    graphHolder.classList.add('toprepo-holder');
+    const graph = document.createElement(`p`);
+    graph.style.fontSize = '0.83em';
+    graph.style.fontWeight = "bold";
+    graph.textContent = "Graph: ";
+    graphHolder.appendChild(graph);
+    const imagegraph = document.createElement('img');
+    imagegraph.style.width = "auto";
+    imagegraph.classList.add('shield');
+    imagegraph.src = statsData.graph;
+    imagegraph.addEventListener('click', async (e) => {
+        const pad = `&${Math.random(0, 100)}`;
+        const body = document.querySelector('body');
+        const popup = document.createElement('div');
+        popup.classList.add("popup_image");
+        const popup_img = document.createElement('img');
+        popup_img.src = statsData.graph_link + pad;
+        const popup_nav = document.createElement('div');
+        popup_nav.style.alignSelf = "end";
+        popup_nav.style.display = 'flex';
+        popup_nav.style.flexDirection = 'row';
+        popup_nav.style.alignItems = 'center';
+        const popup_title = document.createElement('h3');
+        popup_title.style.display = "inline-block";
+        popup_title.textContent = "Activity";
+        popup_title.style.margin = 0;
+        popup_title.style.padding = '0 20px';
+        popup_nav.appendChild(popup_title);
+
+        const popup_close = document.createElement('img');
+        popup_close.src = './src/image/close.png';
+        popup_close.style.width = '32px';
+        popup_close.style.marginBottom = "10px";
+
+        popup_nav.appendChild(popup_close);
+        popup.appendChild(popup_nav);
+
+        popup.appendChild(popup_img);
+        body.appendChild(popup);
+        popup.addEventListener('click', (e) => {
+            body.removeChild(popup);
+        });
+        setTimeout(() => {
+            // body.removeChild(popup);
+        }, 5000);
+    });
+    graphHolder.appendChild(imagegraph);
+
+
     card.appendChild(toprepoHolder);
+    card.appendChild(graphHolder);
     cardholder.appendChild(card);
 
     const stat = document.createElement('img');
