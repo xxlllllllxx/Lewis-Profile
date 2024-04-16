@@ -198,12 +198,12 @@
             ],
             "screenshots": [
                 {
-                    "name": "Main",
-                    "link": "./src/screenshot/autoscale/main.png"
+                    "name": "Circuit Diagram",
+                    "link": "./src/screenshot/autoscale/diagram.png"
                 },
                 {
-                    "name": "Diagram",
-                    "link": "./src/screenshot/autoscale/diagram.png"
+                    "name": "Main",
+                    "link": "./src/screenshot/autoscale/main.png"
                 },
                 [
                     {
@@ -242,6 +242,10 @@
                 {
                     "name": "Liquid Crystal Display",
                     "badge": "https://img.shields.io/badge/liquid_cristal_i2c-black?style=for-the-badge&logo=gnometerminal"
+                },
+                {
+                    "name": "Stepper Motor ",
+                    "badge": "https://img.shields.io/badge/stepper_motor-black?style=for-the-badge&logo=speedtest"
                 }
             ],
             "hardware_integration": [
@@ -266,7 +270,12 @@
                     "badge": "https://img.shields.io/badge/motor_polarity_reversal_using_2_relay-6A6B6E?style=for-the-badge&logo=arduino&logoColor=blue"
                 }
             ],
-            "screenshots": []
+            "screenshots": [
+                {
+                    "name": "Circuit Diagram",
+                    "link": "./src/screenshot/autotrash/circuit.png"
+                }
+            ]
         },
         {
             "id": "p004",
