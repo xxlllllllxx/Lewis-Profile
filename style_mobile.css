@@ -375,11 +375,11 @@ img {
 }
 
 .bottomnav {
-    height: 48px;
-    width: 180px;
+    height: 24px;
+    width: 100px;
     background-color: rgba(0, 0, 0, 0.7);
-    bottom: 20px;
-    right: 50px;
+    bottom: 10px;
+    right: 20px;
     justify-content: center;
     align-items: center;
     gap: 10px;

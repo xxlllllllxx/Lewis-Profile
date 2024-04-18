@@ -3,7 +3,7 @@ let is_mobile = false;
 document.addEventListener("DOMContentLoaded", function (arg) {
     const close = document.querySelector('#close_snackbar');
     const devicewidth = window.innerWidth;
-    is_mobile = devicewidth <= 500;
+    // is_mobile = devicewidth <= 500;
     console.log(is_mobile, devicewidth)
 
     if (is_mobile) {
