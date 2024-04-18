@@ -1,5 +1,27 @@
+let is_mobile = false;
+
 document.addEventListener("DOMContentLoaded", function (arg) {
     const close = document.querySelector('#close_snackbar');
+    const devicewidth = window.innerWidth;
+    is_mobile = devicewidth <= 500;
+    console.log(is_mobile, devicewidth)
+
+    if (is_mobile) {
+        const head = document.head;
+        const link = document.createElement('link');
+        link.type = 'text/css';
+        link.rel = 'stylesheet';
+        link.href = 'style_mobile.css';
+        head.appendChild(link);
+    } else {
+        const head = document.head;
+        const link = document.createElement('link');
+        link.type = 'text/css';
+        link.rel = 'stylesheet';
+        link.href = 'style.css';
+        head.appendChild(link);
+    }
+
     close.addEventListener(`click`, (e) => {
         snackbar.style.display = 'none';
     });
@@ -14,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function (arg) {
         console.error('There was a problem fetching the data:', error);
     });
 });
-
 
 function loadInformation(data) {
     const profile = document.querySelector(`#profile`);
@@ -168,7 +189,7 @@ function createStatsElement(statsData) {
     statsContainer.style.width = "890px";
     statsContainer.style.marginLeft = "10px";
     statsContainer.style.marginRight = "10px";
-    statsContainer.style.height = "400px";
+    statsContainer.style.height = (is_mobile) ? "auto" : "400px";
     statsContainer.classList.add('stats');
     statsContainer.classList.add('snapper');
     statsContainer.addEventListener('click', (e) => {

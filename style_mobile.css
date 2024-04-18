@@ -1,0 +1,401 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-size: 100%;
+    color: #fff;
+    user-select: none;
+    min-height: 670px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    /* background-image: url("./src/image/vecteezy_banner-poster-flyer-design-with-watercolor-pattern-on-dark_.jpg"); */
+
+}
+
+
+#backdrop {
+    position: fixed;
+    z-index: -99999;
+    height: 100vh;
+    width: 100vh;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-image: url("./src/image/vecteezy_banner-poster-flyer-design-with-watercolor-pattern-on-dark_.jpg");
+    border-radius: 0 !important;
+}
+
+.content {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 10px;
+}
+
+.title {
+    padding-top: 20px !important;
+}
+
+.inner-title {
+    position: absolute;
+    top: 10;
+    left: 0;
+    padding: 15px 25px;
+    /* border: 1px solid white; */
+    border-radius: 12px;
+    min-width: 200px;
+    background-color: rgba(10, 10, 10, 0.8);
+    background-color: rgba(10, 10, 20, 0.6);
+    border-radius: 12px;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 1), inset -2px 2px 2px rgba(128, 128, 128, 0.5);
+    color: #fff;
+}
+
+header {
+    background-color: #101010;
+    padding: 5px;
+    /* position: sticky;
+    top: -20px; */
+}
+
+.header-nav {
+    color: #fff;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.header-nav a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+.click:hover {
+    color: blue;
+    cursor: grab;
+}
+
+.mousedown {
+    cursor: grabbing !important;
+}
+
+.shield {
+    height: 28px;
+    transition: transform 0.2s ease;
+}
+
+.shield:hover {
+    transform: scale(1.05);
+}
+
+
+section {
+    padding: 20px;
+}
+
+b {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.tab {
+    margin-left: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+ul li::before {
+    content: "◘";
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.tab ul li::before {
+    content: "‣";
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.technologies {
+    margin-top: 10px;
+}
+
+.socials {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.socials a {
+    margin: 0 2px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+}
+
+img {
+    border: 1px solid #101010;
+    border-radius: 8px;
+}
+
+.tech-hardware-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+#snackbar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    padding: 15px 30px 15px 15px;
+    align-items: center;
+    display: none;
+    background-color: rgba(20, 20, 20, 0.8);
+    border-radius: 8px;
+
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 1), inset -1px 1px 1px rgba(128, 128, 128, 0.5);
+}
+
+#close_snackbar {
+    border: none;
+    margin-right: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+.scroll {
+    padding: 12px;
+    overflow-x: scroll;
+    width: 100%;
+    /* transform: rotateX(180deg); TOP SCROLLBAR CHEAT*/
+    scroll-snap-type: x mandatory;
+}
+
+.snapper {
+    scroll-snap-align: center;
+    scroll-snap-stop: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #202020;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid black;
+    background-color: rgba(20, 20, 20, 0.8);
+}
+
+.popup_image {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(20, 20, 20, 0.8);
+    margin-left: 60px;
+    margin-top: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 1), inset -2px 2px 2px rgba(128, 128, 128, 0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* STATISTICS */
+
+#statsbox {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /* transform: rotateX(180deg); TOP SCROLLBAR CHEAT from praveenpuglia*/
+}
+
+.stats {
+    margin-bottom: 20px;
+    padding: 20px 40px;
+    background-color: rgba(20, 20, 20, 0.6);
+    border-radius: 12px;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 1), inset -2px 2px 2px rgba(128, 128, 128, 0.5);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+
+}
+
+.info-card {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stats img {
+    /* width: 50%;
+    height: 100%; */
+    border: none;
+    box-shadow: none !important;
+}
+
+.stats:hover {
+    transform: scale(1.01);
+}
+
+.stats .toprepo-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scroll::-webkit-scrollbar {
+    height: 15px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    border: 2px solid #aaa;
+}
+
+.scroll::-webkit-scrollbar-track {
+    margin-left: 400px;
+    margin-right: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* PROJECTS */
+#projects {
+    padding-top: 0 !important;
+}
+
+#projbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.project_scroll {
+    display: flex;
+    min-height: 580px !important;
+    max-height: 580px !important;
+    flex-direction: row;
+    padding: 10px;
+    gap: 40px;
+    transition: transform 0.2s ease;
+}
+
+.top {
+    position: relative;
+}
+
+.top:hover .navigator {
+    display: flex;
+}
+
+.project {
+    padding: 20px 40px;
+    background-color: rgba(10, 10, 20, 0.6);
+    border-radius: 12px;
+    min-width: 900px;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 1), inset -2px 2px 2px rgba(128, 128, 128, 0.5);
+}
+
+.project_scroll:hover {
+    transform: scale(1.01);
+}
+
+.project-bottom-nav {
+    display: flex;
+    justify-content: end;
+}
+
+.project-bottom-nav span {
+    margin-left: 20px;
+}
+
+.project-bottom-nav span:hover {
+    margin-left: 20px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.project a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.project-description {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.navigator {
+    position: absolute;
+    border-radius: 12px;
+    display: none;
+}
+
+.bottomnav {
+    height: 48px;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 20px;
+    right: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.navigator img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: #101010;
+}
+
+.navigator img:hover {
+    background-color: #007bff;
+}
+
+.nav {
+    overflow: hidden;
+}
