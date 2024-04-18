@@ -197,9 +197,11 @@ function createStatsElement(statsData) {
     title.style.marginBottom = "20px"
     card.appendChild(title);
     const name = document.createElement(`h5`);
+    name.style.marginTop = "0";
     name.textContent = "Name: " + statsData.name;
     card.appendChild(name);
     const start = document.createElement(`h5`);
+    start.style.marginTop = "0";
     start.textContent = "Start Date: " + statsData.start;
     card.appendChild(start);
     const toprepoHolder = document.createElement('div');
@@ -312,20 +314,19 @@ function createProjectElement(projectData) {
 
     const titleElement = document.createElement('h3');
     titleElement.innerHTML = `${projectData.title} ${projectData.project ? "<span class='click'>" + projectData.project + "</span>" : ""}`;
-    projectContainer.appendChild(titleElement);
 
-
-
-    projectContainer.appendChild(titleElement);
 
     const linkElement = document.createElement('a');
     linkElement.href = projectData.link;
     linkElement.target = '_blank';
     const image = document.createElement('img');
+    image.style.marginBottom = "-10px";
+    image.style.marginLeft = "10px";
     image.classList.add('shield');
     image.src = projectData.link_badge;
     linkElement.appendChild(image);
-    projectContainer.appendChild(linkElement);
+    titleElement.appendChild(linkElement);
+    projectContainer.appendChild(titleElement);
 
     const roleElement = document.createElement('p');
     roleElement.innerHTML = `<b>Role: </b>${projectData.role}`;

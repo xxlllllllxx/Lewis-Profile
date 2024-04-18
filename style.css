@@ -13,6 +13,13 @@ body {
     /* background-image: url("./src/image/vecteezy_banner-poster-flyer-design-with-watercolor-pattern-on-dark_.jpg"); */
 }
 
+@media (max-width: 500px) {
+    body {
+        transform: scale(0.45);
+        transform-origin: top left;
+    }
+}
+
 #backdrop {
     position: fixed;
     z-index: -99999;
