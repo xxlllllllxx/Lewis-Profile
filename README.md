@@ -33,6 +33,8 @@
 
 ##  accounts:
 
+<a href="https://app.daily.dev/lewis62"><img src="https://api.daily.dev/devcards/v2/4m2pYjSx8x9ayKvyekxs2.png?r=zb8&type=default" width="356" alt="lewis's Dev Card"/></a>
+
 [![GitHub](https://img.shields.io/badge/bsuscbsit-100000?style=for-the-badge&logo=github)](https://github.com/bsuscbsit)  
 [![GitHub](https://img.shields.io/badge/xxlllllllxx-100000?style=for-the-badge&logo=github)](https://github.com/xxlllllllxx)  
 [![GitHub](https://img.shields.io/badge/lewisdaverielmasallo-100000?style=for-the-badge&logo=github)](https://github.com/lewisdaverielmasallo)  
